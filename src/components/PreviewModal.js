@@ -4,10 +4,10 @@ import { Modal, Image, Grid, Button } from "semantic-ui-react";
 const yn = ["No", "Yes"];
 
 export default function PreviewModal({ openedImage, onImageModalClose }) {
-  const label = `Space Babez #${openedImage?.id - 1}`;
+  const label = `Space Babez #${openedImage?.id}`;
   const image =
     "/babez/space_babez_" +
-    (openedImage?.id - 1).toString().padStart(4, "0") +
+    (openedImage?.id).toString().padStart(4, "0") +
     ".png";
   return (
     <Modal

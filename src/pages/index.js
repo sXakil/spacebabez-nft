@@ -346,10 +346,10 @@ const IndexPage = () => {
       </Container>
       <div className="resultContainer">
         <div className="imgContainer">
-          {filteredIds.slice(0, max).map((img) => (
+          {filteredIds.slice(0, max).map((val, img) => (
             <ImageButton
-              key={img}
-              value={img}
+              key={val}
+              value={val}
               onClick={() => onImageModalOpen(babez[img])}
             />
           ))}
