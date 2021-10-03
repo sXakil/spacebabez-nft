@@ -1,4 +1,5 @@
 import React from "react";
+import { Embed } from "semantic-ui-react";
 
 export default function About() {
   return (
@@ -14,6 +15,11 @@ export default function About() {
         includes <span className="pink"> 1,120 </span> different types of
         <span className="blue"> #boobs</span>
       </p>
+      <Embed
+        id="eh4iH7YLqAM"
+        placeholder="https://img.youtube.com/vi/eh4iH7YLqAM/maxresdefault.jpg"
+        source="youtube"
+      />
       <p className="details highlight">
         If you like the stuff{" "}
         <a href="https://anti.biz" target="_blank" rel="noreferrer">
