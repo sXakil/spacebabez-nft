@@ -183,7 +183,7 @@ div.main-header h1.prime {
 }
 div.main-header h1.slogan {
   font-size: 24px;
-  margin-bottom: -40px;
+  margin-bottom: -30px;
 }
 .babez {
   max-height: 700px;
@@ -206,7 +206,7 @@ div.main-header h1.slogan {
 }
 
 button.buyNow {
-  margin-top: -30px;
+  margin-top: -20px;
   width: 304px;
   height: 79px;
   background: url("../images/space_babez_buy_now.png");
@@ -490,10 +490,10 @@ p.results {
     margin: 10px 0;
   }
   div.main-header h1.slogan {
-    margin-bottom: -20px;
+    margin-bottom: -30px;
   }
   button.buyNow {
-    margin-top: -20px;
+    margin-top: -15px;
   }
   button.buyNow {
     width: 270px;

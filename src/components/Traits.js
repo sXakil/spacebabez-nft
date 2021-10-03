@@ -5,7 +5,7 @@ export default function Traits() {
   return (
     <>
       <h1 className="section-header">TRAITS</h1>
-      <Image size="large" centered src={"/ft/Space_Babez_Traits.png"} />
+      <Image fluid centered src={"/ft/Space_Babez_Traits.png"} />
       <p className="details">
         <small>
           <strike>

@@ -31,12 +31,6 @@ export default function Roadmap() {
           [
           <i className="orange gavel icon" />
           ]&nbsp;&nbsp;&nbsp;
-          <span>Keep building Space Babez community</span>
-        </li>
-        <li>
-          [
-          <i className="orange gavel icon" />
-          ]&nbsp;&nbsp;&nbsp;
           <span>Give out free Space Babez NFT everyday on Twitter/Discord</span>
         </li>
         <li>
