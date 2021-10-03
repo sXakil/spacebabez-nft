@@ -1,0 +1,75 @@
+import React, { useState } from "react";
+import { Accordion, Icon, Transition } from "semantic-ui-react";
+
+const data = [
+  {
+    title: "How can I buy a Space Babez?",
+    description:
+      'You can buy a Space Babez by clicking the BUY NOW button. This will bring up a pop-up that will display a Cardano payment address.<br/>There will also be information on how much<span class="pink"> ₳ADA </span>to send. For example<span class="pink"> 15 ₳ADA </span>will get you<span class="pink"> 1 </span>Space Babez. There will be discounts if you buy in bulk.<br/><br/>You will need a Cardano wallet like Daeladus (full node), Yoroi (light wallet), or Nami (light wallet, no hardware wallet support).<br/><br/>Inside of your Cardano wallet you will need some Cardano also known as<span class="pink"> ₳ADA</span>. If you live inside the USA you can buy some Cardano with a debit card or bank account @ <a class="u" href="https://www.bittrex.com" target="_blank" rel="noreferrer">www.bittrex.com</a> or <a class="u" href="https://www.crypto.com" target="_blank" rel="noreferrer">www.crypto.com</a> (great app which makes buying and sending<span class="pink"> ₳ADA </span>easy)<br/><br/>Do Not send<span class="pink"> ₳ADA </span>from an exchange, you will not receive your NFT there, make sure you\'re using one of the wallets above.<br/><br/>For those outside of the USA you should be able to buy<span class="pink"> ₳ADA </span>(Cardano) @ <a class="u" href="https://www.binance.com" target="_blank" rel="noreferrer">www.binance.com</a>',
+  },
+  {
+    title: "What is a NFT?",
+    description:
+      'NFT is a Non Fungible Token which makes it unique and can\'t be replaced with something else. Think of these like a one-of-akind trading card. You will be able to trade, buy and sell these after you get<span class="pink"> 1</span>.<br/><br/>These NFTS will be minted on the Cardano blockchain as<span class="pink"> ₳ADA </span>is sent to the address. They will be distributed automatically in a fair random order. Which means that everyone has an equal chance of getting a rare Space Babez!<br/><br/>These Space Babez will be minted using a time-locked policy, meaning that no more Space Babez can be created (minted) or destroyed (burned) after a certain amount of time.<br/><br/>Therefore, by definition, all Space Babez are NFTs.<br/><br/>You can view the minting policy <a class="u" href="https://cardanoscan.io/tokenPolicy/06182641070ae8541d3bee4cca4a8aafaa55dc4e1fb916d645acc082" target="_blank" rel="noreferrer">here</a>.',
+  },
+  {
+    title: "What is metadata?",
+    description:
+      'The metadata for each Space Babez is on-chain. What that means is that the Cardano blockchain stores the information of each NFT forever. Each NFT will store the description, image, policy #, links and unique traits of each Space Babez. The metadata is created when you purchase an Space Babez from our website (<a class="u" href="https://www.spacebabez.io">www.spacebabez.io</a>) automatically and sent to your wallet!',
+  },
+  {
+    title: "What is a policy number?",
+    description:
+      'A single policy number for all <span class="pink">9,999</span> Space Babez will be created during the minting of each NFT. This is a way to know if you got an authentic Space Babez or someone is creating a knock-off or imitation. After the sale is over we will verify our policy # on <a class="u" href="https://cnft.io" target="_blank" rel="noreferrer">CNFT.IO</a> please wait to verify the policy # before buying or selling. It could take a few days or more depending on how long the admins of <a class="u" href="https://cnft.io" target="_blank" rel="noreferrer">CNFT.IO</a> take to verify our policy number! ',
+  },
+  {
+    title: 'What does "Minting" mean?',
+    description:
+      "Minting means to create a NFT (Non Fungible Token or Fungible Token) on the Cardano blockchain. You can think of minting as it being created. As the Space Babez NFT doesn't exist till it’s minted or created.  When you buy a Space Babez it is minted/created on the spot, so that it now permanently exist on the Cardano block chain as metadata. There is a time-locked policy which will lock at a certain time, which will make it impossible for anymore Space Babez to be minted (created) or burned (destroyed) after that set time, <u>9/30/2022 11:59 PM</u>. Since all of the Space Babez are minted (created) using the same time-locked policy this increases their value as a collectibles. You can think of this like a set of Pokémon characters that were created, but no more will be created like them ever again.",
+  },
+  {
+    title: "How do I view my NFT?",
+    description:
+      'To view your NFT you can use a Cardano wallet like <a class="u" href="https://chrome.google.com/webstore/detail/nami-wallet/lpfcbjknijpeeillifnkikgncikgfhdo" target="_blank" rel="noreferrer">NAMI</a><br/>The easiest way is to input your Cardano receive address into the search bar @ <a class="u" href="https://www.pool.pm" target="_blank" rel="noreferrer">www.pool.pm</a> click the magnifying glass in the top right corner and add your address where you received the NFTS at. You will then be able to see your Space Babez NFTS (image, metadata)<br/>',
+  },
+];
+
+export default function FAQ() {
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  function handleClick(_, titleProps) {
+    const { index } = titleProps;
+    const newIndex = activeIndex === index ? -1 : index;
+    setActiveIndex(newIndex);
+  }
+
+  return (
+    <>
+      <h1 className="section-header">FAQ</h1>
+      <Accordion styled fluid>
+        {data.map((d, idx) => (
+          <React.Fragment key={idx}>
+            <Accordion.Title
+              active={activeIndex === idx}
+              index={idx}
+              onClick={handleClick}
+            >
+              <Icon name="dropdown" />
+              {d.title}
+            </Accordion.Title>
+            <Accordion.Content active={activeIndex === idx}>
+              <Transition.Group animation="slide down" duration={300}>
+                {activeIndex === idx && (
+                  <p
+                    style={{ fontSize: 22 }}
+                    dangerouslySetInnerHTML={{ __html: d.description }}
+                  />
+                )}
+              </Transition.Group>
+            </Accordion.Content>
+          </React.Fragment>
+        ))}
+      </Accordion>
+    </>
+  );
+}
