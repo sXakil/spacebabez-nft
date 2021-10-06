@@ -19,7 +19,7 @@ export default function Header({ onBuyButtonClicked }) {
           </h1>
           <img src={logo} className="logo" alt="BABEZ Logo" />
           <h1 className="slogan">
-            These Babez have been in Space way too long...
+            If you're gonna be hot, you might as well be hot in space...
           </h1>
           <img
             src={`/ft/space_babez_${ft || 0}.png`}

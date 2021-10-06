@@ -15,7 +15,7 @@ const data = [
   {
     title: "What is metadata?",
     description:
-      'The metadata for each Space Babez is on-chain. What that means is that the Cardano blockchain stores the information of each NFT forever. Each NFT will store the description, image, policy #, links and unique traits of each Space Babez. The metadata is created when you purchase an Space Babez from our website (<a class="u" href="https://www.spacebabez.io">www.spacebabez.io</a>) automatically and sent to your wallet!',
+      'The metadata for each Space Babez is on-chain. What that means is that the Cardano blockchain stores the information of each NFT forever. Each NFT will store the description, image link, policy #, links and unique traits of each Space Babez. When you purchase a Space Babez from our website (<a class="u" href="https://www.spacebabez.io">www.spacebabez.io</a>) the Space Babez NFT will be automatically sent to your wallet!',
   },
   {
     title: "What is a policy number?",
@@ -25,12 +25,12 @@ const data = [
   {
     title: 'What does "Minting" mean?',
     description:
-      "Minting means to create a NFT (Non Fungible Token or Fungible Token) on the Cardano blockchain. You can think of minting as it being created. As the Space Babez NFT doesn't exist till it’s minted or created.  When you buy a Space Babez it is minted/created on the spot, so that it now permanently exist on the Cardano block chain as metadata. There is a time-locked policy which will lock at a certain time, which will make it impossible for anymore Space Babez to be minted (created) or burned (destroyed) after that set time, <u>9/30/2022 11:59 PM</u>. Since all of the Space Babez are minted (created) using the same time-locked policy this increases their value as a collectibles. You can think of this like a set of Pokémon characters that were created, but no more will be created like them ever again.",
+      "Minting means to create a NFT (Non Fungible Token or Fungible Token) on the Cardano blockchain. You can think of minting as it being created. As the Space Babez NFT doesn't exist till it’s minted or created.  When you buy a Space Babez it is minted/created on the spot, so that it now permanently exist on the Cardano blockchain as metadata. There is a time-locked policy which will lock at a certain time, which will make it impossible for anymore Space Babez to be minted (created) or burned (destroyed) after that set time, <u>9/30/2022 11:59 PM</u>. Since all of the Space Babez are minted (created) using the same time-locked policy this increases their value as collectibles. You can think of this like a set of Pokémon characters that were created, but no more will be created like them ever again.",
   },
   {
     title: "How do I view my NFT?",
     description:
-      'To view your NFT you can use a Cardano wallet like <a class="u" href="https://chrome.google.com/webstore/detail/nami-wallet/lpfcbjknijpeeillifnkikgncikgfhdo" target="_blank" rel="noreferrer">NAMI</a><br/>The easiest way is to input your Cardano receive address into the search bar @ <a class="u" href="https://www.pool.pm" target="_blank" rel="noreferrer">www.pool.pm</a> click the magnifying glass in the top right corner and add your address where you received the NFTS at. You will then be able to see your Space Babez NFTS (image, metadata)<br/>',
+      'To view your NFT you can use a Cardano wallet like <a class="u" href="https://chrome.google.com/webstore/detail/nami-wallet/lpfcbjknijpeeillifnkikgncikgfhdo" target="_blank" rel="noreferrer">NAMI</a><br/>The easiest way is to input your Cardano receive address into the search bar @ <a class="u" href="https://pool.pm" target="_blank" rel="noreferrer">www.pool.pm</a> click the magnifying glass in the top right corner and add your address where you received the NFTS at. You will then be able to see your Space Babez NFTS (image, metadata)<br/>',
   },
 ];
 
