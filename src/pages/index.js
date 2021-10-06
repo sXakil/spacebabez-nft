@@ -240,131 +240,150 @@ const IndexPage = () => {
           <Icon name="facebook" />
         </a>
       </div>
+
       <Container text style={{ marginTop: 20 }}>
         <About />
         <Faq />
         <Roadmap />
-        <Shop />
-        <Traits />
-        <h1 className="section-header">Explore</h1>
-        <SearchInput
-          selectedOptions={selectedIds}
-          onSelected={handleSelection}
-        />
-        <Grid stackable columns={2}>
-          <Grid.Column>
-            <Star value={selectedFilters.star} onChange={handleFilterChange} />
-          </Grid.Column>
-          <Grid.Column>
-            <Power
-              value={selectedFilters.power}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Species
-              value={selectedFilters.species}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Accent
-              value={selectedFilters.accent}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Necklace
-              value={selectedFilters.necklace}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Accessory
-              value={selectedFilters.accessory}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Outfit
-              value={selectedFilters.outfit}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Hair value={selectedFilters.hair} onChange={handleFilterChange} />
-          </Grid.Column>
-          <Grid.Column>
-            <Earring
-              value={selectedFilters.earring}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Glove
-              value={selectedFilters.glove}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Weapon
-              value={selectedFilters.weapon}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <Shoe value={selectedFilters.shoe} onChange={handleFilterChange} />
-          </Grid.Column>
-        </Grid>
-        <Grid columns={3} stackable>
-          <Grid.Column textAlign="center">
-            <RadioSelect
-              label="Helmet"
-              value={selectedFilters.helmet}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column textAlign="center">
-            <RadioSelect
-              label="Hairspray"
-              value={selectedFilters.hairspray}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-          <Grid.Column textAlign="center">
-            <RadioSelect
-              label="Signature"
-              value={selectedFilters.signature}
-              onChange={handleFilterChange}
-            />
-          </Grid.Column>
-        </Grid>
-        <BoobSize value={selectedFilters.boob} onChange={handleFilterChange} />
-        <p className="results">
-          {filteredIds.length} {filteredIds.length > 1 ? "results" : "result"}
-        </p>
       </Container>
-      <div className="resultContainer">
-        <div className="imgContainer">
-          {filteredIds.slice(0, max).map((val) => (
-            <ImageButton
-              key={val}
-              value={val}
-              onClick={() => onImageModalOpen(babez[val - 1])}
-            />
-          ))}
-        </div>
+      <div className="fade-start">
+        <Container text style={{ paddingTop: 20 }}>
+          <Shop />
+          <Traits />
+          <h1 className="section-header">Explore</h1>
+          <SearchInput
+            selectedOptions={selectedIds}
+            onSelected={handleSelection}
+          />
+          <Grid stackable columns={2}>
+            <Grid.Column>
+              <Star
+                value={selectedFilters.star}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Power
+                value={selectedFilters.power}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Species
+                value={selectedFilters.species}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Accent
+                value={selectedFilters.accent}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Necklace
+                value={selectedFilters.necklace}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Accessory
+                value={selectedFilters.accessory}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Outfit
+                value={selectedFilters.outfit}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Hair
+                value={selectedFilters.hair}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Earring
+                value={selectedFilters.earring}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Glove
+                value={selectedFilters.glove}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Weapon
+                value={selectedFilters.weapon}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Shoe
+                value={selectedFilters.shoe}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+          </Grid>
+          <Grid columns={3} stackable>
+            <Grid.Column textAlign="center">
+              <RadioSelect
+                label="Helmet"
+                value={selectedFilters.helmet}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column textAlign="center">
+              <RadioSelect
+                label="Hairspray"
+                value={selectedFilters.hairspray}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column textAlign="center">
+              <RadioSelect
+                label="Signature"
+                value={selectedFilters.signature}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+          </Grid>
+          <BoobSize
+            value={selectedFilters.boob}
+            onChange={handleFilterChange}
+          />
+          <p className="results">
+            {filteredIds.length} {filteredIds.length > 1 ? "results" : "result"}
+          </p>
+        </Container>
       </div>
-      <div
-        ref={loadingRef}
-        className="ui active centered inline loader"
-        style={{
-          display:
-            filteredIds.length === 0 || filteredIds.length < max
-              ? "none"
-              : "block",
-        }}
-      ></div>
+      <div className="faded">
+        <div className="resultContainer">
+          <div className="imgContainer">
+            {filteredIds.slice(0, max).map((val) => (
+              <ImageButton
+                key={val}
+                value={val}
+                onClick={() => onImageModalOpen(babez[val - 1])}
+              />
+            ))}
+          </div>
+        </div>
+        <div
+          ref={loadingRef}
+          className="ui active centered inline loader"
+          style={{
+            display:
+              filteredIds.length === 0 || filteredIds.length < max
+                ? "none"
+                : "block",
+          }}
+        ></div>
+      </div>
       {openedImage ? (
         <PreviewModal
           openedImage={openedImage}
