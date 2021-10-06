@@ -15,6 +15,11 @@ button,
 body {
   background: #0a0a0a;
   color: #fff;
+  background: url("../images/space_babez_background.png") repeat;
+  background-attachment: fixed;
+}
+body.white {
+  background: #efeff3;
 }
 p,
 div {
@@ -28,6 +33,19 @@ p {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.1);
+}
+.fade-start {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0) 0%,
+    rgba(10, 10, 10, 0.6) 40%,
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+.faded {
+  width: 100%;
+  background-color: rgb(10, 10, 10);
 }
 a {
   color: #9b6ede;
@@ -134,8 +152,6 @@ div.main-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/space_babez_background.png") repeat;
-  background-attachment: fixed;
 }
 .header-container {
   width: 100%;
@@ -545,4 +561,82 @@ p.results {
 
 .ui.selection.dropdown .menu {
   min-height: 200px;
+}
+.ch-main {
+  display: flex;
+  flex-direction: row;
+  place-content: stretch center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.ch-col {
+  display: flex;
+  flex-direction: column;
+  place-content: stretch flex-start;
+  flex: 1 1 0%;
+
+  margin: 5px;
+  flex-wrap: wrap;
+}
+.ui.table.chart {
+  margin: 5px 0;
+  background-color: #fdfdfd;
+  box-shadow: 1px 1px 3px #ccc;
+  min-width: 300px;
+  height: fit-content;
+  border: 2px solid #555;
+}
+.ui.table.chart:first-child {
+  margin-top: 10px;
+}
+
+.ui.table.chart th {
+  padding: 0.5em 0.75em !important;
+}
+.ui.table.chart th.main-th {
+  font-size: 32px;
+  padding: 20px 10px;
+  background-color: #ffffff;
+  color: #000;
+
+  border-bottom: 0;
+  border-radius: 10px;
+}
+.ui.table.chart th.cat-th {
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+  background-color: #efefef;
+  border-top: 5px solid #efeff3 !important;
+}
+
+.ui.table.chart th.cat-th .segment {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .chart.ui.table:not(.unstackable) tr > th.main-th {
+    padding: 20px 10px !important;
+  }
+  .chart.ui.table:not(.unstackable) tr > td {
+    padding: 15px 10px !important;
+  }
+  .chart.ui.table:not(.unstackable) thead {
+    display: table-header-group;
+  }
+  .chart.ui.table:not(.unstackable) tr {
+    display: table-row !important;
+  }
+  .chart.ui.table:not(.unstackable) tbody {
+    display: table-row-group !important;
+  }
+  .chart.ui.table:not(.unstackable) tr > td {
+    display: table-cell !important;
+  }
+  .chart.ui.table:not(.unstackable) tr > th {
+    display: table-cell !important;
+  }
 }
