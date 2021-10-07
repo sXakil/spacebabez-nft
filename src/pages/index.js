@@ -244,8 +244,8 @@ const IndexPage = () => {
       <Container text style={{ marginTop: 20 }}>
         <About />
         <Faq />
-        <Roadmap />
       </Container>
+      <Roadmap />
       <div className="fade-start">
         <Container text style={{ paddingTop: 20 }}>
           <Shop />

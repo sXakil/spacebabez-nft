@@ -364,32 +364,6 @@ p.results {
 .buyNow:hover {
   transform: scaleX(-1);
 }
-
-.road-map {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 auto;
-  font-family: "VT323", "Courier New", Courier, monospace;
-}
-.road-map li {
-  font-size: 22px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.road-map li:hover span {
-  color: #ff10f0;
-  font-style: italic;
-  font-weight: 600;
-}
-.road-map i {
-  transition: transform 0.2s ease;
-}
-.road-map li:hover i {
-  transform: rotate(15deg);
-}
-.road-map i.icon {
-  margin: 0 1px;
-}
 .hashtag {
   color: #143aff;
 }
@@ -584,7 +558,7 @@ p.results {
 .ui.table.chart {
   margin: 5px 0;
   background-color: #fdfdfd;
-  box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #555;
   min-width: 300px;
   height: fit-content;
   border: 2px solid #555;
@@ -638,5 +612,166 @@ p.results {
   }
   .chart.ui.table:not(.unstackable) tr > th {
     display: table-cell !important;
+  }
+}
+.roadmap-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto 70px;
+  height: 600px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  overflow-y: scroll;
+}
+.splide__slide.is-active {
+  opacity: 1;
+  border-bottom: dashed 5px yellow;
+  border-top: dashed 5px yellow;
+  background-color: #121212;
+}
+.splide__slide {
+  padding: 15px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.3;
+  background-color: #11111155;
+  transition: all 0.2s ease;
+}
+.splide__slide div {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.splide__slide.is-active div {
+  cursor: pointer;
+}
+.splide__slide.is-active div:hover span {
+  color: #ff10f0;
+  font-style: italic;
+  font-weight: 600;
+}
+.thermometer {
+  height: 600px;
+  width: 266.66px;
+}
+.thermometer-container {
+  position: relative;
+  margin-left: -60px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 600px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  z-index: 1000;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 600px;
+  height: 267px;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 267px;
+  width: 5px;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type="range"]::-moz-range-track {
+  width: 600px;
+  height: 267px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: red;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 5px;
+  background: white;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 600px;
+  height: 267px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 5px 0;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: red;
+}
+input[type="range"]::-ms-fill-upper {
+  background: red;
+}
+input[type="range"]::-ms-thumb {
+  height: 267px;
+  width: 5px;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: red;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: red;
+}
+
+@media screen and (max-width: 500px) {
+  .thermometer-container {
+    position: relative;
+    margin-left: -30px;
+  }
+  .thermometer {
+    height: 400px;
+    width: 178px;
+  }
+  .roadmap-container {
+    margin-bottom: 0;
+    align-items: center;
+  }
+  .splide__slide div {
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: 5px;
+  }
+  input[type="range"] {
+    width: 400px;
+    bottom: auto;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 400px;
+    width: 178px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    height: 178px;
+  }
+  input[type="range"]::-moz-range-track {
+    height: 400px;
+    width: 178px;
+  }
+  input[type="range"]::-ms-track {
+    height: 400px;
+    width: 178px;
+  }
+  input[type="range"]::-ms-thumb {
+    height: 178px;
   }
 }

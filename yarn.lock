@@ -1453,6 +1453,11 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
+"@splidejs/splide@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.0.6.tgz#7d88b8035d0bc9d4bb11e511af62027478325422"
+  integrity sha512-FDmI5gq+Bo0vSAbFGiNlfcISPI9f7TB7pTm1ettqM1FMhcGZTOH9YpUP8DcwifMes0bf43VAKv23AginWP9fGw==
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
