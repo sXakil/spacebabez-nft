@@ -5,46 +5,46 @@ import Clipboard from "react-clipboard.js";
 const prices = [
   {
     key: 1,
-    pp: "15 ₳ADA",
-    total: "15 ₳ADA",
+    pp: "9 ₳ADA",
+    total: "9 ₳ADA",
   },
   {
     key: 2,
-    pp: "14 ₳ADA",
-    total: "28 ₳ADA",
+    pp: "8.5 ₳ADA",
+    total: "17 ₳ADA",
   },
   {
     key: 3,
-    pp: "13.66 ₳ADA",
-    total: "41 ₳ADA",
+    pp: "8.33 ₳ADA",
+    total: "25 ₳ADA",
   },
   {
     key: 4,
-    pp: "13.5 ₳ADA",
-    total: "54 ₳ADA",
+    pp: "8.25 ₳ADA",
+    total: "33 ₳ADA",
   },
   {
     key: 5,
-    pp: "13.4 ₳ADA",
-    total: "67 ₳ADA",
+    pp: "8.2 ₳ADA",
+    total: "41 ₳ADA",
   },
   {
     key: 6,
-    pp: "13.33 ₳ADA",
-    total: "80 ₳ADA",
+    pp: "8.16 ₳ADA",
+    total: "49 ₳ADA",
   },
   {
     key: 7,
-    pp: "13.28 ₳ADA",
-    total: "93 ₳ADA",
+    pp: "8.14 ₳ADA",
+    total: "57 ₳ADA",
   },
   {
     key: 8,
-    pp: "13.25 ₳ADA",
-    total: "106 ₳ADA",
+    pp: "8.12 ₳ADA",
+    total: "65 ₳ADA",
   },
-  { key: 9, pp: "13.22 ₳ADA", total: "119 ₳ADA" },
-  { key: 10, pp: "13.2 ₳ADA", total: "132 ₳ADA" },
+  { key: 9, pp: "8.11 ₳ADA", total: "73 ₳ADA" },
+  { key: 10, pp: "8.1 ₳ADA", total: "81 ₳ADA" },
 ];
 
 export default function BuyModal({ open, onClose }) {
@@ -80,7 +80,7 @@ export default function BuyModal({ open, onClose }) {
           <Icon name={copied ? "check" : "copy"} />
         </Button>
         <p style={{ margin: 10 }}>
-          Please send<span className="pink"> 15 ₳ADA </span>to the above address
+          Please send<span className="pink"> 9 ₳ADA </span>to the above address
           to receive<span className="pink"> 1 </span>Space Babez, to receive
           more Babez please send the amount listed on the chart below.
         </p>

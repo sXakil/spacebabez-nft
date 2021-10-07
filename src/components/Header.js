@@ -6,7 +6,7 @@ export default function Header({ onBuyButtonClicked }) {
   const [timer, setTimer] = useState("00:00:00");
   useEffect(() => {
     setFt(Math.floor(Math.random() * 14 + 1));
-    const countTo = new Date("Oct 7, 2021 23:59:59").getTime();
+    const countTo = new Date("Oct 8, 2021 11:59:59").getTime();
     const interval = setInterval(() => {
       const distance = countTo - new Date().getTime();
       setTimer(
@@ -37,11 +37,7 @@ export default function Header({ onBuyButtonClicked }) {
           <h1 className="slogan">
             If you're gonna be hot, you might as well be hot in space...
           </h1>
-          <img
-            src={`/ft/space_babez_${ft || 0}.png`}
-            className="babez"
-            alt="BABEZ 5"
-          />
+          <img src={`/ft/${ft || 0}.png`} className="babez" alt="BABEZ 5" />
           <button
             className="buyNow backdrop"
             style={{ display: "none" }}

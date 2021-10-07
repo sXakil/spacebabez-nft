@@ -1,33 +1,34 @@
 import React from "react";
-import { Button, Header, Icon, Segment, Table } from "semantic-ui-react";
+import { Header, Segment, Table } from "semantic-ui-react";
 import { Helmet } from "react-helmet";
 import data from "../data/rarity.json";
 import { Link } from "gatsby";
 
 const bg = {
   Common: "#888888",
-  Uncommon: "#a5673f",
-  Rare: "#fbbd08",
-  Epic: "#2185d0",
-  Legendary: "#e03997",
-  Unicorn: "#a333c8",
-  Holygrail: "#6435c9",
+  Uncommon: "#21BA45",
+  Rare: "#2185d0",
+  Epic: "#a333c8",
+  Legendary: "#F2711C",
+  Unicorn: "#6435c9",
+  Holygrail: "#DB2828",
 };
 const colors = {
   Common: "grey",
-  Uncommon: "orange",
-  Rare: "yellow",
-  Epic: "blue",
-  Legendary: "pink",
-  Unicorn: "purple",
-  Holygrail: "violet",
+  Uncommon: "green",
+  Rare: "blue",
+  Epic: "purple",
+  Legendary: "orange",
+  Unicorn: "violet",
+  Holygrail: "red",
 };
 
 export default function RarityChart() {
   return (
     <>
       <Helmet>
-        <body className="white" />
+        <title>Spacebabez - Rarity Chart</title>
+        {/* <body className="white" /> */}
       </Helmet>
       <Header
         textAlign="center"
@@ -38,7 +39,7 @@ export default function RarityChart() {
           fontFamily: '"VT323", "Courier New", Courier, monospace',
         }}
       >
-        Rarity Charts
+        Rarity Chart
       </Header>
       <div className="ch-main">
         {data.map((rarity, idx) => (
@@ -127,9 +128,27 @@ export default function RarityChart() {
         ))}
       </div>
       <Link to="/">
-        <Button style={{ padding: 20, marginTop: 30 }} fluid>
-          <Icon name="home" style={{ marginRight: 10 }} /> Back to Home
-        </Button>
+        <div
+          style={{
+            padding: 20,
+            marginTop: 30,
+            fontSize: 36,
+            background: "transparent",
+            fontFamily: '"VT323", "Courier New", Courier, monospace',
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#f1f1f1",
+          }}
+          fluid
+        >
+          <img
+            src="/ft/heart_link_96x96.png"
+            alt="heart"
+            style={{ marginRight: 15, height: 40, width: 40 }}
+          />{" "}
+          Back to Home
+        </div>
       </Link>
     </>
   );
