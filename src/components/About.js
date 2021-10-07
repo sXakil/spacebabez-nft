@@ -10,9 +10,9 @@ export default function About() {
         There is a total of<span className="pink"> 9,999 </span>unique Space
         Babez randomly generated for you to collect. No two Space Babez are
         alike, each one was generated from a selection of
-        <span className="pink"> 172 </span>variations in
+        <span className="pink"> 209 </span>variations in
         <span className="pink"> 16 </span>different rarity categories which
-        includes <span className="pink"> 1,120 </span> different types of
+        includes <span className="pink"> 1,792 </span> different types of
         <span className="blue"> #boobs</span>
       </p>
       <Embed

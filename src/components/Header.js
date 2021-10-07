@@ -6,7 +6,7 @@ export default function Header({ onBuyButtonClicked }) {
   const [timer, setTimer] = useState("00:00:00");
   useEffect(() => {
     setFt(Math.floor(Math.random() * 14 + 1));
-    const countTo = new Date("Oct 8, 2021 11:59:59").getTime();
+    const countTo = new Date("Oct 13, 2021 11:59:59").getTime();
     const interval = setInterval(() => {
       const distance = countTo - new Date().getTime();
       setTimer(

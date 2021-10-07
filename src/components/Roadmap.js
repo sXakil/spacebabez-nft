@@ -22,20 +22,20 @@ const data = [
     "Hire artist to draw issue #1 of Space Babez comicbook. Print 1,000-2,000 copies, put digital copy of comicbook on website as a free digital download. Give out physical copies of comicbook to community members in daily giveaways.",
   ],
   [
-    "Series #2 3D digital toy to celebrate {40: Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
+    "Series #2 3D digital toy to celebrate {40% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
   ],
   [
-    "Series #3 3D digital toy to celebrate {50: Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
+    "Series #3 3D digital toy to celebrate {50% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
   ],
   ["Issue #2 Space Babez comicbook created"],
   [
-    "Series #4 3D digital toy to celebrate {70: Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
+    "Series #4 3D digital toy to celebrate {70% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
   ],
   [
-    "Series #5 3D digital toy to celebrate {80: Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100. ",
+    "Series #5 3D digital toy to celebrate {80% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100. ",
   ],
   [
-    "Series #6 3D digital toy to celebrate {90: Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100. ",
+    "Series #6 3D digital toy to celebrate {90% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100. ",
   ],
   [
     "Space Babez real life toy made. (Community will vote on which Space Babez to have made) Give toy to active community members in giveaways. Limited run edition.",
@@ -125,7 +125,9 @@ export default function Roadmap() {
                 <div key={i} className="splide__slide">
                   {d.map((item, idx) => (
                     <div className="" key={idx}>
-                      <span>&mdash; {item}</span>
+                      <span>
+                        <span role="img">{"🚀"}</span> {item}
+                      </span>
                     </div>
                   ))}
                 </div>
