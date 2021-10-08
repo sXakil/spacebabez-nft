@@ -44,49 +44,59 @@ const data = [
   ],
 ];
 
-// const pos = [-70, 90, 90, 140, 230, 290, 380, 395, 450, 500, 495];
+const valData = [96, 92, 84, 75, 67, 58, 50, 41, 33, 16];
+
 let splide = null;
 
 export default function Roadmap() {
   const [range, setRange] = useState(0);
   const [img, setImg] = useState(0);
-  useEffect(() => {
+  function initSplide() {
     splide = new Splide(".splide", {
-      type: "loop",
       arrows: false,
       direction: "ttb",
       height: 600,
       heightRatio: 0.33,
       pagination: false,
       perPage: 3,
-      drag: false,
+      focus: 0,
       keyboard: false,
-      focus: "center",
+      trimSpace: false,
       easing: "cubic-bezier(.69,.04,.32,.97)",
-    }).mount();
+    });
+    splide.mount();
+    splide.on("moved", function () {
+      setImg(splide.index);
+      setTimeout(() => {
+        setRange(valData[splide.index]);
+      }, 300);
+    });
+  }
+  useEffect(() => {
+    initSplide();
   }, []);
   function handleChange(e) {
     const v = e.target.value;
     let val;
-    if (v >= 95) {
+    if (v >= 96) {
       val = 10;
-    } else if (v >= 89) {
+    } else if (v >= 92) {
       val = 9;
-    } else if (v >= 80) {
+    } else if (v >= 84) {
       val = 8;
-    } else if (v >= 71) {
+    } else if (v >= 75) {
       val = 7;
-    } else if (v >= 62) {
+    } else if (v >= 67) {
       val = 6;
-    } else if (v >= 53) {
+    } else if (v >= 58) {
       val = 5;
-    } else if (v >= 45) {
+    } else if (v >= 50) {
       val = 4;
-    } else if (v >= 36) {
+    } else if (v >= 41) {
       val = 3;
-    } else if (v >= 26) {
+    } else if (v >= 33) {
       val = 2;
-    } else if (v >= 12) {
+    } else if (v >= 16) {
       val = 1;
     } else {
       val = 0;
@@ -94,10 +104,15 @@ export default function Roadmap() {
     if (splide) {
       splide.go(val);
     }
-    setImg(val);
-    setTimeout(() => {
-      setRange(range);
-    }, 300);
+  }
+  function goTo(idx) {
+    if (splide) {
+      setImg(idx);
+      setRange(valData[idx]);
+      splide.go(idx);
+    } else {
+      initSplide();
+    }
   }
   return (
     <div style={{ display: "flex", flexDirection: "column", marginTop: 20 }}>
@@ -105,8 +120,8 @@ export default function Roadmap() {
       <div className="roadmap-container">
         <div className="thermometer-container">
           <img
-            src={`/ft/thermoter_${img}.png`}
-            alt="ds"
+            src={`/ft/thermometer_${img}.png`}
+            alt="thermometer"
             className="thermometer"
           />
           <input
@@ -122,12 +137,22 @@ export default function Roadmap() {
           <div className="splide__track">
             <div className="splide__list">
               {data.map((d, i) => (
-                <div key={i} className="splide__slide">
+                <div
+                  key={i}
+                  className="splide__slide"
+                  aria-hidden="true"
+                  onClick={() => goTo(i)}
+                  onKeyDown={() => goTo(i)}
+                >
                   {d.map((item, idx) => (
-                    <div className="" key={idx}>
-                      <span>
-                        <span role="img">{"🚀"}</span> {item}
-                      </span>
+                    <div key={idx}>
+                      <span
+                        style={{ marginBottom: 10, fontSize: 16 }}
+                        role="img"
+                      >
+                        {"🚀"}
+                      </span>{" "}
+                      <span>{item}</span>
                     </div>
                   ))}
                 </div>

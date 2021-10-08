@@ -658,11 +658,11 @@ p.results {
 }
 .thermometer {
   height: 600px;
-  width: 266.66px;
+  width: 99.2px;
 }
 .thermometer-container {
   position: relative;
-  margin-left: -60px;
+  margin: 0 5px;
 }
 input[type="range"] {
   -webkit-appearance: none;
@@ -680,11 +680,11 @@ input[type="range"]:focus {
 }
 input[type="range"]::-webkit-slider-runnable-track {
   width: 600px;
-  height: 267px;
+  height: 99.2px;
   cursor: pointer;
 }
 input[type="range"]::-webkit-slider-thumb {
-  height: 267px;
+  height: 99.2px;
   width: 5px;
   border-radius: 7px;
   background: white;
@@ -693,7 +693,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 input[type="range"]::-moz-range-track {
   width: 600px;
-  height: 267px;
+  height: 99.2px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
   background: red;
   border-radius: 25px;
@@ -707,7 +707,7 @@ input[type="range"]::-moz-range-thumb {
 }
 input[type="range"]::-ms-track {
   width: 600px;
-  height: 267px;
+  height: 99.2px;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
@@ -721,7 +721,7 @@ input[type="range"]::-ms-fill-upper {
   background: red;
 }
 input[type="range"]::-ms-thumb {
-  height: 267px;
+  height: 99.2px;
   width: 5px;
   border-radius: 7px;
   background: white;
@@ -735,14 +735,6 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 @media screen and (max-width: 500px) {
-  .thermometer-container {
-    position: relative;
-    margin-left: -30px;
-  }
-  .thermometer {
-    height: 400px;
-    width: 178px;
-  }
   .roadmap-container {
     margin-bottom: 0;
     align-items: center;
@@ -750,28 +742,9 @@ input[type="range"]:focus::-ms-fill-upper {
   .splide__slide div {
     font-size: 18px;
     line-height: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
   input[type="range"] {
-    width: 400px;
-    bottom: auto;
-  }
-  input[type="range"]::-webkit-slider-runnable-track {
-    height: 400px;
-    width: 178px;
-  }
-  input[type="range"]::-webkit-slider-thumb {
-    height: 178px;
-  }
-  input[type="range"]::-moz-range-track {
-    height: 400px;
-    width: 178px;
-  }
-  input[type="range"]::-ms-track {
-    height: 400px;
-    width: 178px;
-  }
-  input[type="range"]::-ms-thumb {
-    height: 178px;
+    bottom: 0;
   }
 }
