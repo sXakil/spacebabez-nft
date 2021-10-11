@@ -37,6 +37,7 @@ export default function RarityChart() {
           marginTop: 20,
           fontSize: 38,
           fontFamily: '"VT323", "Courier New", Courier, monospace',
+          color: "#ffffff",
         }}
       >
         Rarity Chart
@@ -147,7 +148,7 @@ export default function RarityChart() {
             alt="heart"
             style={{ marginRight: 15, height: 40, width: 40 }}
           />{" "}
-          Back to Home
+          Home
         </div>
       </Link>
     </>
