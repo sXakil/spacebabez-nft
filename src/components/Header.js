@@ -31,8 +31,8 @@ export default function Header({ onBuyButtonClicked }) {
   function resetTyped() {
     typed.current = new Typed(text.current, {
       strings: [
-        "6,666",
-        '<span class="pink">9,999</span> crypto collectibles on the Cardano blockchain',
+        "8,888 crypto",
+        '<span class="pink">8,888</span> crypto collectibles on the Cardano blockchain',
       ],
       typeSpeed: 85,
       backSpeed: 45,

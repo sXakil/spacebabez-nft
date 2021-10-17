@@ -20,7 +20,7 @@ const data = [
   {
     title: "What is a policy number?",
     description:
-      'A single policy number for all <span class="pink">9,999</span> Space Babez will be created during the minting of each NFT. This is a way to know if you got an authentic Space Babez or someone is creating a knock-off or imitation. After the sale is over we will verify our policy # on <a class="u" href="https://cnft.io" target="_blank" rel="noreferrer">CNFT.IO</a> please wait to verify the policy # before buying or selling. It could take a few days or more depending on how long the admins of <a class="u" href="https://cnft.io" target="_blank" rel="noreferrer">CNFT.IO</a> take to verify our policy number! ',
+      'A single policy number for all <span class="pink">8,888</span> Space Babez will be created during the minting of each NFT. This is a way to know if you got an authentic Space Babez or someone is creating a knock-off or imitation. After the sale is over we will verify our policy # on <a class="u" href="https://cnft.io" target="_blank" rel="noreferrer">CNFT.IO</a> please wait to verify the policy # before buying or selling. It could take a few days or more depending on how long the admins of <a class="u" href="https://cnft.io" target="_blank" rel="noreferrer">CNFT.IO</a> take to verify our policy number! ',
   },
   {
     title: 'What does "Minting" mean?',
