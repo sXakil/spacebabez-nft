@@ -3,35 +3,6 @@ import { Accordion, Icon, Transition } from "semantic-ui-react";
 
 const data = [
   {
-    title: "Are Space Babez a good investment?",
-    description:
-      'That is ultimately a decision for you to make. We believe Space Babez have a long life ahead of them, and will be an ever growing and evolving project. (On & off the blockchain) However the success of Space Babez relies on so many factors and variables, no one knows! Hopefully Space Babez go to the moon, but like anything in life, don’t spend money you can’t afford to not have.<br/><br/>Space Babez will soon be a registered trademark of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> and is integral part of the universe / lore of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> (comic books, toys, games, etc)<br/><br/>So NFTs on Cardano is the first step in a long road for build this. If you like the ideas and want to support the project we appreciate every that does. We promise to keep building this world for years and years to come. With everyone’s support it truly will become something epic!',
-  },
-  {
-    title: "Who is the team that created Space Babez?",
-    description:
-      'The team is made up of the creator <a href="https://www.Twitter.com/diicasses" target="_blank" rel="noreferrer">@diicasses</a>, artist  <a href="https://instagram.com/cryptomuseumnft" target="_blank" rel="noreferrer">@cryptomuseumnft</a> coding, backend sales, and web development. Which is all a part of the business <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a>',
-  },
-  {
-    title: "Who is Dii Casses?",
-    description:
-      'Dii Casses wants to remain anonymous as a mysterious artist. Dii Casses is also the name of the main character in the <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> lore.<br/><br/><a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> has been in development since<span class="pink"> 2015 </span>and is planning on revamping the website with a completely new design, look and feel very soon.<br/><br/>In the future <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> will have<span class="pink"> 3D </span>video streams of the main character, skits using props, new AR filters, clothes, gadgets, toys and more.<br/><br/>Expect us to keep building new content and projects for you to enjoy over the years. Our goal is to be a household name one day.<br/><br/>For more information check the <b>About Us</b> section on <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a>',
-  },
-
-  // For more information about Anti.biz
-  // ——————
-  {
-    title: "What can I do with my Space Babez?",
-    description:
-      "You are free to do anything with them under a non-exclusive license.",
-  },
-  {
-    title: "How do I get involved?",
-    description:
-      'Head on over to <a href="https://discord.gg/5KE3H2tTzR" target="_blank"  rel="noreferrer">Discord</a> & <a href="https://www.twitter.com/spacebabez" target="_blank"  rel="noreferrer">Twitter</a> to jump into the conversation & share your ideas!~',
-  },
-
-  {
     title: "How can I buy a Space Babez?",
     description:
       'You can buy a Space Babez by clicking the BUY NOW button. This will bring up a pop-up that will display a Cardano payment address.<br/>There will also be information on how much<span class="pink"> ₳ADA </span>to send. For example<span class="pink"> 9 ₳ADA </span>will get you<span class="pink"> 1 </span>Space Babez. There will be discounts if you buy in bulk.<br/><br/>You will need a Cardano wallet like Daeladus (full node), Yoroi (light wallet), or Nami (light wallet, no hardware wallet support).<br/><br/>Inside of your Cardano wallet you will need some Cardano also known as<span class="pink"> ₳ADA</span>. If you live inside the USA you can buy some Cardano with a debit card or bank account @ <a class="u" href="https://www.bittrex.com" target="_blank" rel="noreferrer">www.bittrex.com</a> or <a class="u" href="https://www.crypto.com" target="_blank" rel="noreferrer">www.crypto.com</a> (great app which makes buying and sending<span class="pink"> ₳ADA </span>easy)<br/><br/>Do Not send<span class="pink"> ₳ADA </span>from an exchange, you will not receive your NFT there, make sure you\'re using one of the wallets above.<br/><br/>For those outside of the USA you should be able to buy<span class="pink"> ₳ADA </span>(Cardano) @ <a class="u" href="https://www.binance.com" target="_blank" rel="noreferrer">www.binance.com</a>',
@@ -60,6 +31,31 @@ const data = [
     title: "How do I view my NFT?",
     description:
       'To view your NFT you can use a Cardano wallet like <a class="u" href="https://chrome.google.com/webstore/detail/nami-wallet/lpfcbjknijpeeillifnkikgncikgfhdo" target="_blank" rel="noreferrer">NAMI</a><br/>The easiest way is to input your Cardano receive address into the search bar @ <a class="u" href="https://pool.pm" target="_blank" rel="noreferrer">www.pool.pm</a> click the magnifying glass in the top right corner and add your address where you received the NFTS at. You will then be able to see your Space Babez NFTS (image, metadata)<br/>',
+  },
+  {
+    title: "Are Space Babez a good investment?",
+    description:
+      'That is ultimately a decision for you to make. We believe Space Babez have a long life ahead of them, and will be an ever growing and evolving project. (On & off the blockchain) However the success of Space Babez relies on so many factors and variables, no one knows! Hopefully Space Babez go to the moon, but like anything in life, don’t spend money you can’t afford to not have.<br/><br/>Space Babez will soon be a registered trademark of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> and is integral part of the universe / lore of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> (comic books, toys, games, etc)<br/><br/>So NFTs on Cardano is the first step in a long road for build this. If you like the ideas and want to support the project we appreciate every that does. We promise to keep building this world for years and years to come. With everyone’s support it truly will become something epic!',
+  },
+  {
+    title: "Who is the team that created Space Babez?",
+    description:
+      'The team is made up of the creator <a href="https://www.Twitter.com/diicasses" target="_blank" rel="noreferrer">@diicasses</a>, artist  <a href="https://instagram.com/cryptomuseumnft" target="_blank" rel="noreferrer">@cryptomuseumnft</a> coding, backend sales, and web development. Which is all a part of the business <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a>',
+  },
+  {
+    title: "Who is Dii Casses?",
+    description:
+      'Dii Casses wants to remain anonymous as a mysterious artist. Dii Casses is also the name of the main character in the <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> lore.<br/><br/><a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> has been in development since<span class="pink"> 2015 </span>and is planning on revamping the website with a completely new design, look and feel very soon.<br/><br/>In the future <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> will have<span class="pink"> 3D </span>video streams of the main character, skits using props, new AR filters, clothes, gadgets, toys and more.<br/><br/>Expect us to keep building new content and projects for you to enjoy over the years. Our goal is to be a household name one day.<br/><br/>For more information check the <b>About Us</b> section on <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a>',
+  },
+  {
+    title: "What can I do with my Space Babez?",
+    description:
+      "You are free to do anything with them under a non-exclusive license.",
+  },
+  {
+    title: "How do I get involved?",
+    description:
+      'Head on over to <a href="https://discord.gg/5KE3H2tTzR" target="_blank"  rel="noreferrer">Discord</a> & <a href="https://www.twitter.com/spacebabez" target="_blank"  rel="noreferrer">Twitter</a> to jump into the conversation & share your ideas!~',
   },
 ];
 

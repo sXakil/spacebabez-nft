@@ -618,7 +618,7 @@ p.results {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 800px;
+  max-width: 715px;
   position: relative;
   margin: 0 auto 70px;
   height: 600px;
@@ -647,6 +647,7 @@ p.results {
 .splide__slide div {
   font-size: 22px;
   margin-bottom: 12px;
+  text-align: justify;
 }
 .splide__slide.is-active div {
   cursor: pointer;
