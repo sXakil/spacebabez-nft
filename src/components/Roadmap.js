@@ -4,41 +4,37 @@ import "@splidejs/splide/dist/css/splide.min.css";
 
 const data = [
   [
-    "Develop Space Babez website, add rarity chart & searchable filters. ",
+    "Develop Space Babez website, add rarity chart & searchable filters.",
     "Build Space Babez community",
-    "Launch sale ",
-    "Give out Space Babez to the community on Twitter & Discord ",
+    "Launch sale",
     "Make clothes featuring Space Babez artwork",
   ],
+  ["Add Space Babez to Anti.biz lore"],
   [
-    "Space Babez clothing giveaways to active community members ",
-    "Add Space Babez to Anti.biz lore ",
-  ],
-  [
-    "Create limited run Series #1 3D digital toy version of the most voted on Space Babez as a unique limited edition NFT & give out to anyone hodling 10+ Space Babez. Max supply 100.",
+    "Create limited run Series #1 3D digital toy version of the most voted on Space Babez as a unique limited edition NFT. Max supply 100.",
     "Hire @eliza.Osmo (Instagram) to create 1 of a kind T-shirt design featuring Space Babez.",
   ],
   [
-    "Hire artist to draw issue #1 of Space Babez comicbook. Print 1,000-2,000 copies, put digital copy of comicbook on website as a free digital download. Give out physical copies of comicbook to community members in daily giveaways.",
+    "Hire artist to draw issue #1 of Space Babez comicbook. Print 1,000-2,000 copies, put digital copy of comicbook on website as a free digital download.",
   ],
   [
-    "Series #2 3D digital toy to celebrate {40% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
+    "Series #2 3D digital toy to celebrate 40% Space Babez sold. Max supply 100.",
   ],
   [
-    "Series #3 3D digital toy to celebrate {50% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
+    "Series #3 3D digital toy to celebrate 50% Space Babez sold. Max supply 100.",
   ],
   ["Issue #2 Space Babez comicbook created"],
   [
-    "Series #4 3D digital toy to celebrate {70% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100.",
+    "Series #4 3D digital toy to celebrate 70% Space Babez sold. Max supply 100.",
   ],
   [
-    "Series #5 3D digital toy to celebrate {80% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100. ",
+    "Series #5 3D digital toy to celebrate 80% Space Babez sold. Max supply 100. ",
   ],
   [
-    "Series #6 3D digital toy to celebrate {90% Space Babez sold. Give out for free to active community members that hodl 10+ Space Babez. Max supply 100. ",
+    "Series #6 3D digital toy to celebrate 90% Space Babez sold. Max supply 100. ",
   ],
   [
-    "Space Babez real life toy made. (Community will vote on which Space Babez to have made) Give toy to active community members in giveaways. Limited run edition.",
+    "Space Babez real life toy made. (Community will vote on which Space Babez to have made). Limited run edition.",
     "More clothing designs made. ",
     "Issue #3 Space Babez comicbook created.",
   ],

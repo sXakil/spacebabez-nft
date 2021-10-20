@@ -11,8 +11,8 @@ export default function About() {
         <span className="pink"> 8,888 </span>unique Space Babez randomly
         generated for you to collect. No two Space Babez are alike, each one was
         generated from a selection of
-        <span className="pink"> 284 </span>variations in
-        <span className="pink"> 17 </span>different rarity categories which
+        <span className="pink"> 259 </span>variations in
+        <span className="pink"> 16 </span>different rarity categories which
         includes <span className="pink"> 2,142 </span> different types of
         <span className="blue"> #boobz</span>
       </p>
