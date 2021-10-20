@@ -9,7 +9,7 @@ export default function Header({ onBuyButtonClicked }) {
   const typed = useRef(null);
   useEffect(() => {
     setFt(Math.floor(Math.random() * 14 + 1));
-    const countTo = new Date("Oct 20, 2021 11:59:59").getTime();
+    const countTo = new Date("Oct 24, 2021 11:59:59").getTime();
     const interval = setInterval(() => {
       const distance = countTo - new Date().getTime();
       setTimer(
