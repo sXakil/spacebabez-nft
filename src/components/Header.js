@@ -9,7 +9,7 @@ export default function Header({ onBuyButtonClicked }) {
   const typed = useRef(null);
   useEffect(() => {
     setFt(Math.floor(Math.random() * 14 + 1));
-    const countTo = new Date("Oct 24, 2021 11:59:59").getTime();
+    const countTo = new Date("2021-10-27T23:59:59").getTime();
     const interval = setInterval(() => {
       const distance = countTo - new Date().getTime();
       setTimer(
@@ -31,8 +31,8 @@ export default function Header({ onBuyButtonClicked }) {
   function resetTyped() {
     typed.current = new Typed(text.current, {
       strings: [
-        "8,888 crypto",
-        '<span class="pink">8,888</span> crypto collectibles on the Cardano blockchain',
+        "6,666 crypto",
+        '<span class="pink">6,666</span> crypto collectibles on the Cardano blockchain',
       ],
       typeSpeed: 85,
       backSpeed: 45,

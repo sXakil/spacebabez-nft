@@ -8,7 +8,7 @@ export default function About() {
       <p className="details">
         Space Babez were created to live forever on the Cardano Blockchain.
         There is a total of
-        <span className="pink"> 8,888 </span>unique Space Babez randomly
+        <span className="pink"> 6,666 </span>unique Space Babez randomly
         generated for you to collect. No two Space Babez are alike, each one was
         generated from a selection of
         <span className="pink"> 259 </span>variations in

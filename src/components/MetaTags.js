@@ -17,7 +17,7 @@ export default function MetaTags() {
       />
       <meta
         name="description"
-        content="Space Babez were created to live forever on the Cardano Blockchain. There is a total of 8,888 unique Space Babez randomly generated for you to collect. No two Space Babez are alike, each one was generated from a selection of 284 variations in 17 different rarity categories which includes 2,142 different types of #boobz"
+        content="Space Babez were created to live forever on the Cardano Blockchain. There is a total of 6,666 unique Space Babez randomly generated for you to collect. No two Space Babez are alike, each one was generated from a selection of 284 variations in 17 different rarity categories which includes 2,142 different types of #boobz"
       />
 
       <meta property="og:type" content="website" />
@@ -29,7 +29,7 @@ export default function MetaTags() {
       />
       <meta
         property="og:description"
-        content="Space Babez were created to live forever on the Cardano Blockchain. There is a total of 8,888 unique Space Babez randomly generated for you to collect. No two Space Babez are alike, each one was generated from a selection of 284 variations in 17 different rarity categories which includes 2,142 different types of #boobz"
+        content="Space Babez were created to live forever on the Cardano Blockchain. There is a total of 6,666 unique Space Babez randomly generated for you to collect. No two Space Babez are alike, each one was generated from a selection of 284 variations in 17 different rarity categories which includes 2,142 different types of #boobz"
       />
       <meta property="og:image" content="/ft/banner.png" />
       <meta property="twitter:card" content="summary_large_image" />
@@ -41,7 +41,7 @@ export default function MetaTags() {
       />
       <meta
         property="twitter:description"
-        content="Space Babez were created to live forever on the Cardano Blockchain. There is a total of 8,888 unique Space Babez randomly generated for you to collect. No two Space Babez are alike, each one was generated from a selection of 284 variations in 17 different rarity categories which includes 2,142 different types of #boobz"
+        content="Space Babez were created to live forever on the Cardano Blockchain. There is a total of 6,666 unique Space Babez randomly generated for you to collect. No two Space Babez are alike, each one was generated from a selection of 284 variations in 17 different rarity categories which includes 2,142 different types of #boobz"
       />
       <meta property="twitter:image" content="/ft/banner.png" />
     </Helmet>
