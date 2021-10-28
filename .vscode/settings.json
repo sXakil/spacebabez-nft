@@ -12,5 +12,5 @@
     "**/node_modules": true,
     "**/*.lock": true
   },
-  "python.formatting.provider": "autopep8"
+  "python.formatting.provider": "none"
 }
