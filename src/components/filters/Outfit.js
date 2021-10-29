@@ -28,26 +28,15 @@ export default function Outfit({ value, onChange }) {
       text={text}
     >
       <Dropdown.Menu>
-        {outfitDrops.map((item) =>
-          typeof item.value === "string" ? (
-            <Dropdown.Item
-              selected={value === item.value}
-              className="d-h"
-              key={item.value}
-              value={item.value}
-              text={item.label}
-              onClick={itemClick}
-            />
-          ) : (
-            <Dropdown.Item
-              selected={value === item.value}
-              key={item.value}
-              value={item.value}
-              text={item.label}
-              onClick={itemClick}
-            />
-          )
-        )}
+        {outfitDrops.map((item) => (
+          <Dropdown.Item
+            selected={value === item.value}
+            key={item.value}
+            value={item.value}
+            text={item.label}
+            onClick={itemClick}
+          />
+        ))}
       </Dropdown.Menu>
     </Dropdown>
   );

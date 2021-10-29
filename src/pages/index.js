@@ -22,34 +22,22 @@ import Star from "../components/filters/Star";
 import Accent from "../components/filters/Accent";
 import Accessory from "../components/filters/Accessory";
 import babez from "../data/spacebabez.json";
-import speciesData from "../data/species.json";
-import outfitData from "../data/outfit.json";
-import weaponData from "../data/weapon.json";
-import powerData from "../data/power.json";
-import hairData from "../data/hair.json";
-import gloveData from "../data/glove.json";
-import shoeData from "../data/shoe.json";
-import starData from "../data/star.json";
 import accentData from "../data/accent.json";
 import accessoryData from "../data/accessory.json";
-import helmetData from "../data/helmet.json";
-import hairsprayData from "../data/hairspray.json";
-import signatureData from "../data/signature.json";
 import boobData from "../data/boob.json";
 import earringData from "../data/earring.json";
+import gloveData from "../data/glove.json";
+import hairData from "../data/hair.json";
+import hairsprayData from "../data/hairspray.json";
+import helmetData from "../data/helmet.json";
 import necklaceData from "../data/necklace.json";
-import speciesCats from "../data/cats/speciesCats.json";
-import outfitCats from "../data/cats/outfitCats.json";
-import weaponCats from "../data/cats/weaponCats.json";
-import powerCats from "../data/cats/powerCats.json";
-import hairCats from "../data/cats/hairCats.json";
-import gloveCats from "../data/cats/gloveCats.json";
-import shoeCats from "../data/cats/shoeCats.json";
-import starCats from "../data/cats/starCats.json";
-import accentCats from "../data/cats/accentCats.json";
-import accessoryCats from "../data/cats/accessoryCats.json";
-import earringCats from "../data/cats/earringCats.json";
-import necklaceCats from "../data/cats/necklaceCats.json";
+import outfitData from "../data/outfit.json";
+import powerData from "../data/power.json";
+import shoeData from "../data/shoe.json";
+import speciesData from "../data/species.json";
+import starData from "../data/star.json";
+import vortexData from "../data/vortex.json";
+import weaponData from "../data/weapon.json";
 import RadioSelect from "../components/RadioSelect";
 import BoobSize from "../components/filters/BoobSize";
 import Earring from "../components/filters/Earring";
@@ -58,66 +46,38 @@ import Necklace from "../components/filters/Necklace";
 function checkAndFilter(fIds, selection, what) {
   let ids = [];
   if (selection) {
-    if (+selection) {
-      if (what === "species") {
-        ids = speciesData[selection];
-      } else if (what === "outfit") {
-        ids = outfitData[selection];
-      } else if (what === "weapon") {
-        ids = weaponData[selection];
-      } else if (what === "power") {
-        ids = powerData[selection];
-      } else if (what === "hair") {
-        ids = hairData[selection];
-      } else if (what === "glove") {
-        ids = gloveData[selection];
-      } else if (what === "shoe") {
-        ids = shoeData[selection];
-      } else if (what === "star") {
-        ids = starData[selection];
-      } else if (what === "accent") {
-        ids = accentData[selection];
-      } else if (what === "accessory") {
-        ids = accessoryData[selection];
-      } else if (what === "earring") {
-        ids = earringData[selection];
-      } else if (what === "necklace") {
-        ids = necklaceData[selection];
-      }
-    } else {
-      if (what === "species") {
-        ids = speciesCats[selection];
-      } else if (what === "outfit") {
-        ids = outfitCats[selection];
-      } else if (what === "weapon") {
-        ids = weaponCats[selection];
-      } else if (what === "power") {
-        ids = powerCats[selection];
-      } else if (what === "hair") {
-        ids = hairCats[selection];
-      } else if (what === "glove") {
-        ids = gloveCats[selection];
-      } else if (what === "shoe") {
-        ids = shoeCats[selection];
-      } else if (what === "star") {
-        ids = starCats[selection];
-      } else if (what === "accent") {
-        ids = accentCats[selection];
-      } else if (what === "accessory") {
-        ids = accessoryCats[selection];
-      } else if (what === "helmet") {
-        ids = helmetData[selection];
-      } else if (what === "hairspray") {
-        ids = hairsprayData[selection];
-      } else if (what === "signature") {
-        ids = signatureData[selection];
-      } else if (what === "boob") {
-        ids = boobData[selection];
-      } else if (what === "earring") {
-        ids = earringCats[selection];
-      } else if (what === "necklace") {
-        ids = necklaceCats[selection];
-      }
+    if (what === "species") {
+      ids = speciesData[selection];
+    } else if (what === "outfit") {
+      ids = outfitData[selection];
+    } else if (what === "weapon") {
+      ids = weaponData[selection];
+    } else if (what === "power") {
+      ids = powerData[selection];
+    } else if (what === "hair") {
+      ids = hairData[selection];
+    } else if (what === "glove") {
+      ids = gloveData[selection];
+    } else if (what === "shoe") {
+      ids = shoeData[selection];
+    } else if (what === "star") {
+      ids = starData[selection];
+    } else if (what === "accent") {
+      ids = accentData[selection];
+    } else if (what === "accessory") {
+      ids = accessoryData[selection];
+    } else if (what === "earring") {
+      ids = earringData[selection];
+    } else if (what === "necklace") {
+      ids = necklaceData[selection];
+    } else if (what === "boob") {
+      ids = boobData[selection];
+    } else if (what === "hairspray") {
+      ids = hairsprayData[selection];
+    } else if (what === "hemet") {
+      ids = helmetData[selection];
+    } else if (what === "vortex") {
+      ids = vortexData[selection];
     }
     fIds = ids.filter((id) => fIds.length === 0 || fIds.indexOf(id) >= 0);
   }
@@ -145,7 +105,6 @@ const IndexPage = () => {
     star: "",
     helmet: "",
     hairspray: "",
-    signature: "",
     boob: "",
   });
   const [openedBuyModal, setOpenedBuyModal] = useState(null);
@@ -329,7 +288,7 @@ const IndexPage = () => {
               />
             </Grid.Column>
           </Grid>
-          <Grid columns={3} stackable>
+          <Grid columns={2} stackable>
             <Grid.Column textAlign="center">
               <RadioSelect
                 label="Helmet"
@@ -341,13 +300,6 @@ const IndexPage = () => {
               <RadioSelect
                 label="Hairspray"
                 value={selectedFilters.hairspray}
-                onChange={handleFilterChange}
-              />
-            </Grid.Column>
-            <Grid.Column textAlign="center">
-              <RadioSelect
-                label="Signature"
-                value={selectedFilters.signature}
                 onChange={handleFilterChange}
               />
             </Grid.Column>
