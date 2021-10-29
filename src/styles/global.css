@@ -166,7 +166,6 @@ div.main-header h1 {
   margin: 15px 0;
   max-width: 500px;
   font-size: 32px;
-  /* font-weight: 600; */
   color: #fefefe;
   text-align: center;
   line-height: 1;
@@ -517,12 +516,6 @@ p.results {
     width: 100%;
     height: 100%;
   }
-  /* .modals.dimmer .ui.scrolling.modal {
-    margin-top: 0;
-  }
-  .modals.dimmer {
-    padding-top: 0;
-  } */
 }
 
 @keyframes floating {
@@ -552,9 +545,20 @@ p.results {
   flex-direction: column;
   place-content: stretch flex-start;
   flex: 1 1 0%;
-
   margin: 5px;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+.heart-img {
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 36px;
+  background: transparent;
+  font-family: "VT323", "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
 }
 .ui.table.chart {
   margin: 5px 0;
@@ -576,7 +580,6 @@ p.results {
   padding: 20px 10px;
   background-color: #ffffff;
   color: #000;
-
   border-bottom: 0;
   border-radius: 10px;
 }

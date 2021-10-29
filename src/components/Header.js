@@ -9,7 +9,7 @@ export default function Header({ onBuyButtonClicked }) {
   const typed = useRef(null);
   useEffect(() => {
     setFt(Math.floor(Math.random() * 14 + 1));
-    const countTo = new Date("2021-10-27T23:59:59").getTime();
+    const countTo = new Date("2021-10-31T19:00:00").getTime();
     const interval = setInterval(() => {
       const distance = countTo - new Date().getTime();
       setTimer(
@@ -68,7 +68,7 @@ export default function Header({ onBuyButtonClicked }) {
           >
             {" "}
           </button>
-          <span className="label">Sale starts in</span>
+          <span className="label">Sale starts on Halloween</span>
           <span className="time">{timer}</span>
           <h1 aria-hidden="true" ref={text} />
         </div>
