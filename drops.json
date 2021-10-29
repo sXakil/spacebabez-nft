@@ -119,7 +119,7 @@
     { "label": "White Neon Bracer", "value": 18 },
     { "label": "None", "value": 19 }
   ],
-  "Shoes": [
+  "shoes": [
     { "label": "Barefoot", "value": 1 },
     { "label": "Blue Cybernetic", "value": 2 },
     { "label": "Checkered Boots", "value": 3 },
