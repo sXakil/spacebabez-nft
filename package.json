@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Space Babez NFT",
-  "author": "sXakil",
+  "author": {
+    "name": "sXakil",
+    "email": "hi@shakil.info",
+    "url": "https://shakil.info"
+  },
   "keywords": [
     "gatsby"
   ],
