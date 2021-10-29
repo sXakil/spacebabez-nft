@@ -5,7 +5,7 @@ export default function BoobSize({ value, onChange }) {
   return (
     <Segment inverted textAlign="center" style={{ marginTop: 25 }}>
       <strong style={{ fontSize: 20, marginRight: 15 }}>Boob Size</strong>
-      {["A", "B", "C", "D", "E", "F", "G"].map((letter) => (
+      {[1, 2, 3, 4, 5, 6, 7].map((letter) => (
         <Button
           size="tiny"
           key={letter}
@@ -16,7 +16,7 @@ export default function BoobSize({ value, onChange }) {
           color="grey"
           onClick={() => onChange("boob", value === letter ? "" : letter)}
         >
-          {letter}
+          {" ABCDEFG"[letter]}
         </Button>
       ))}
     </Segment>

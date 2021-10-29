@@ -21,15 +21,15 @@ export default function RadioSelect({ label, value, onChange }) {
         <Checkbox
           style={{ marginLeft: 10 }}
           label="Yes"
-          value={"yes"}
-          checked={value === "yes"}
+          value={1}
+          checked={value === 1}
           onChange={handleChange}
         />
         <Checkbox
           style={{ marginLeft: 10 }}
           label="No"
-          value={"no"}
-          checked={value === "no"}
+          value={2}
+          checked={value === 2}
           onChange={handleChange}
         />
       </Form.Field>

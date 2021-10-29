@@ -1,7 +1,7 @@
 import React from "react";
 import { Dropdown } from "semantic-ui-react";
 
-const data = Array.from({ length: 9999 }).map((_, i) => ({
+const data = Array.from({ length: 6666 }).map((_, i) => ({
   text: "Space Babez #" + (i + 1),
   key: i,
   value: i,

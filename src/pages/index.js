@@ -74,7 +74,7 @@ function checkAndFilter(fIds, selection, what) {
       ids = boobData[selection];
     } else if (what === "hairspray") {
       ids = hairsprayData[selection];
-    } else if (what === "hemet") {
+    } else if (what === "helmet") {
       ids = helmetData[selection];
     } else if (what === "vortex") {
       ids = vortexData[selection];
@@ -129,7 +129,7 @@ const IndexPage = () => {
         (key) => selectedFilters[key] !== ""
       );
       if (noResults) setFilteredIds([]);
-      else setFilteredIds(Array.from({ length: 9999 }, (_, i) => i + 1));
+      else setFilteredIds(Array.from({ length: 6666 }, (_, i) => i + 1));
     }
   }, [selectedFilters, selectedIds]);
 
@@ -137,7 +137,7 @@ const IndexPage = () => {
     function handleObserver(entities) {
       const y = entities[0].boundingClientRect.y;
       if (prevY >= y) {
-        setMax((i) => Math.min(i + 20, 9999));
+        setMax((i) => Math.min(i + 20, 6666));
       }
       prevY = y;
     }
