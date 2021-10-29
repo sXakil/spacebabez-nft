@@ -10,7 +10,8 @@
     "**/Thumbs.db": true,
     "**/.cache": true,
     "**/node_modules": true,
-    "**/*.lock": true
+    "**/*.lock": true,
+    "**/.vscode": true
   },
   "python.formatting.provider": "none"
 }
