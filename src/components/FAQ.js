@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Accordion, Icon, Transition } from "semantic-ui-react";
+import { Accordion, Button, Icon, Transition } from "semantic-ui-react";
 
 const data = [
   {
@@ -25,7 +25,7 @@ const data = [
   {
     title: 'What does "Minting" mean?',
     description:
-      "Minting means to create a NFT (Non Fungible Token or Fungible Token) on the Cardano blockchain. You can think of minting as it being created. As the Space Babez NFT doesn't exist till it’s minted or created.  When you buy a Space Babez it is minted/created on the spot, so that it now permanently exist on the Cardano blockchain as metadata. There is a time-locked policy which will lock at a certain time, which will make it impossible for anymore Space Babez to be minted (created) or burned (destroyed) after that set time, <u>9/30/2022 11:59 PM</u>. Since all of the Space Babez are minted (created) using the same time-locked policy this increases their value as collectibles. You can think of this like a set of Pokémon characters that were created, but no more will be created like them ever again.",
+      "Minting means to create a NFT (Non Fungible Token or Fungible Token) on the Cardano blockchain. You can think of minting as it being created. As the Space Babez NFT doesn't exist till it's minted or created.  When you buy a Space Babez it is minted/created on the spot, so that it now permanently exist on the Cardano blockchain as metadata. There is a time-locked policy which will lock at a certain time, which will make it impossible for anymore Space Babez to be minted (created) or burned (destroyed) after that set time, <u>9/30/2022 11:59 PM</u>. Since all of the Space Babez are minted (created) using the same time-locked policy this increases their value as collectibles. You can think of this like a set of Pokémon characters that were created, but no more will be created like them ever again.",
   },
   {
     title: "How do I view my NFT?",
@@ -35,7 +35,7 @@ const data = [
   {
     title: "Are Space Babez a good investment?",
     description:
-      'That is ultimately a decision for you to make. We believe Space Babez have a long life ahead of them, and will be an ever growing and evolving project. (On & off the blockchain) However the success of Space Babez relies on so many factors and variables, no one knows! Hopefully Space Babez go to the moon, but like anything in life, don’t spend money you can’t afford to not have.<br/><br/>Space Babez will soon be a registered trademark of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> and is integral part of the universe / lore of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> (comic books, toys, games, etc)<br/><br/>So NFTs on Cardano is the first step in a long road to building everything we want. If you like the ideas and want to support the project, we appreciate your part in it. We create something new every single day for you to enjoy. With everyone\'s support, we can keep building and creating brand-new content faster than on our own. This can become something epic that you helped make a reality!',
+      'That is ultimately a decision for you to make. We believe Space Babez have a long life ahead of them, and will be an ever growing and evolving project. (On & off the blockchain) However the success of Space Babez relies on so many factors and variables, no one knows! Hopefully Space Babez go to the moon, but like anything in life, don\'t spend money you can\'t afford to not have.<br/><br/>Space Babez will soon be a registered trademark of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> and is integral part of the universe / lore of <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a> (comic books, toys, games, etc)<br/><br/>NFTs on Cardano is the first step in a long road for building the world of Space Babez. If you like the ideas and want to support the project we appreciate every that does. We promise to keep building this world for years and years to come. With every NFT you purchase you are helping us build this universe a lot faster then we could do on our own. In time with everyone\'s support it truly will become something epic!',
   },
   {
     title: "Who is the team that created Space Babez?",
@@ -60,7 +60,12 @@ const data = [
 ];
 
 export default function FAQ() {
+  const [visible, setVisible] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
+
+  function toggleVisibility() {
+    setVisible((v) => !v);
+  }
 
   function handleClick(_, titleProps) {
     const { index } = titleProps;
@@ -69,32 +74,68 @@ export default function FAQ() {
   }
 
   return (
-    <>
-      <h1 className="section-header">FAQ</h1>
-      <Accordion styled fluid>
-        {data.map((d, idx) => (
-          <React.Fragment key={idx}>
-            <Accordion.Title
-              active={activeIndex === idx}
-              index={idx}
-              onClick={handleClick}
-            >
-              <Icon name="dropdown" />
-              {d.title}
-            </Accordion.Title>
-            <Accordion.Content active={activeIndex === idx}>
-              <Transition.Group animation="slide down" duration={300}>
-                {activeIndex === idx && (
-                  <p
-                    style={{ fontSize: 22 }}
-                    dangerouslySetInnerHTML={{ __html: d.description }}
-                  />
-                )}
-              </Transition.Group>
-            </Accordion.Content>
-          </React.Fragment>
-        ))}
-      </Accordion>
-    </>
+    <div>
+      <Button
+        fluid
+        onClick={toggleVisibility}
+        className={"faq-button" + (visible ? " opened" : "")}
+        basic
+      >
+        <span>FAQ</span>
+        <div className="trw">
+          <Transition
+            visible={visible}
+            animation="vertical flip"
+            duration={200}
+          >
+            <Icon
+              style={{ color: "#652bbc" }}
+              name="angle double up"
+              size="large"
+            />
+          </Transition>
+        </div>
+        <div className="trw">
+          <Transition
+            visible={!visible}
+            animation="vertical flip"
+            duration={200}
+          >
+            <Icon color="black" name="angle double down" size="large" />
+          </Transition>
+        </div>
+      </Button>
+      <Transition
+        visible={visible}
+        animation="slide down"
+        duration={400}
+        unmountOnHide
+      >
+        <Accordion styled fluid>
+          {data.map((d, idx) => (
+            <React.Fragment key={idx}>
+              <Accordion.Title
+                active={activeIndex === idx}
+                index={idx}
+                onClick={handleClick}
+              >
+                <Icon name="dropdown" />
+                {d.title}
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === idx}>
+                <Transition.Group animation="slide down" duration={300}>
+                  {activeIndex === idx && (
+                    <p
+                      style={{ fontSize: 22 }}
+                      dangerouslySetInnerHTML={{ __html: d.description }}
+                    />
+                  )}
+                </Transition.Group>
+              </Accordion.Content>
+            </React.Fragment>
+          ))}
+        </Accordion>
+      </Transition>
+    </div>
   );
 }
