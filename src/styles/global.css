@@ -236,15 +236,6 @@ button.buyNow {
   cursor: pointer;
   justify-self: flex-end;
 }
-td.buyMore {
-  padding-bottom: 10px;
-  text-align: center;
-  font-size: 22px;
-  color: #6164f7;
-}
-td.buyMore strong {
-  color: #ff10f0;
-}
 .socials {
   display: flex;
   flex-direction: row;
@@ -332,6 +323,19 @@ p.results {
 .price-table th {
   font-size: 22px;
   text-align: center;
+}
+td.buyMore {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: #6164f7;
+}
+td.buyMore strong {
+  color: #ff10f0;
+}
+.price-table tr:hover > td.buyMore:hover {
+  font-weight: bold;
+  color: #5456fc;
 }
 .spacebabez-container {
   position: relative;
