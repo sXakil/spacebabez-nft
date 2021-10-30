@@ -142,6 +142,9 @@ h1.section-header {
   font-weight: 600;
   transition: font-weight 0.2s ease;
 }
+.mb-2 {
+  margin-bottom: 2rem;
+}
 h1.section-header:hover {
   font-weight: 400;
 }

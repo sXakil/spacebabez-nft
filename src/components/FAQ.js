@@ -25,7 +25,7 @@ const data = [
   {
     title: 'What does "Minting" mean?',
     description:
-      "Minting means to create a NFT (Non Fungible Token or Fungible Token) on the Cardano blockchain. You can think of minting as it being created. As the Space Babez NFT doesn't exist till it's minted or created.  When you buy a Space Babez it is minted/created on the spot, so that it now permanently exist on the Cardano blockchain as metadata. There is a time-locked policy which will lock at a certain time, which will make it impossible for anymore Space Babez to be minted (created) or burned (destroyed) after that set time, <u>9/30/2022 11:59 PM</u>. Since all of the Space Babez are minted (created) using the same time-locked policy this increases their value as collectibles. You can think of this like a set of Pokémon characters that were created, but no more will be created like them ever again.",
+      "Minting means to create a NFT (Non Fungible Token or Fungible Token) on the Cardano blockchain. You can think of minting as it being created. As the Space Babez NFT doesn't exist till it's minted or created.  When you buy a Space Babez it is minted/created on the spot, so that it now permanently exist on the Cardano blockchain as metadata. There is a time-locked policy which will lock at a certain time, which will make it impossible for anymore Space Babez to be minted (created) or burned (destroyed) after that set time, <u>10/31/2022 11:59 PM</u>. Since all of the Space Babez are minted (created) using the same time-locked policy this increases their value as collectibles. You can think of this like a set of Pokémon characters that were created, but no more will be created like them ever again.",
   },
   {
     title: "How do I view my NFT?",

@@ -42,6 +42,7 @@ import RadioSelect from "../components/RadioSelect";
 import BoobSize from "../components/filters/BoobSize";
 import Earring from "../components/filters/Earring";
 import Necklace from "../components/filters/Necklace";
+import Vortex from "../components/filters/Vortex";
 
 function checkAndFilter(fIds, selection, what) {
   let ids = [];
@@ -106,6 +107,7 @@ const IndexPage = () => {
     helmet: "",
     hairspray: "",
     boob: "",
+    vortex: "",
   });
   const [openedBuyModal, setOpenedBuyModal] = useState(null);
   const [openedImage, setOpenedImage] = useState(null);
@@ -209,12 +211,14 @@ const IndexPage = () => {
         <Container text style={{ paddingTop: 20 }}>
           <Shop />
           <Traits />
-          <h1 className="section-header">Explore</h1>
-          <SearchInput
-            selectedOptions={selectedIds}
-            onSelected={handleSelection}
-          />
+          <h1 className="section-header mb-2">Explore</h1>
           <Grid stackable columns={2}>
+            <Grid.Column>
+              <SearchInput
+                selectedOptions={selectedIds}
+                onSelected={handleSelection}
+              />
+            </Grid.Column>
             <Grid.Column>
               <Star
                 value={selectedFilters.star}
@@ -284,6 +288,12 @@ const IndexPage = () => {
             <Grid.Column>
               <Shoe
                 value={selectedFilters.shoe}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Vortex
+                value={selectedFilters.vortex}
                 onChange={handleFilterChange}
               />
             </Grid.Column>

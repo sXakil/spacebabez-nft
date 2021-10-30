@@ -15,9 +15,9 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "build": "gatsby build && move .\\babez .\\public\\ && move .\\ft .\\public\\",
-    "clean": "move .\\public\\babez .\\ && move .\\public\\ft .\\ &&  gatsby clean",
-    "cb": "move .\\public\\babez .\\ && move .\\public\\ft .\\ &&  gatsby clean && gatsby build && move .\\ft .\\public\\"
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "cb": "move .\\public\\ft .\\ &&  gatsby clean && gatsby build && move .\\ft .\\public\\"
   },
   "dependencies": {
     "@fontsource/vt323": "^4.5.0",

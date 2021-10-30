@@ -21,7 +21,7 @@ export default function SearchInput({ selectedOptions = [], onSelected }) {
       options={data}
       value={selectedOptions}
       onChange={onSelected}
-      style={{ marginBottom: 24, minHeight: 51 }}
+      style={{ marginBottom: 10, minHeight: 51 }}
     />
   );
 }
