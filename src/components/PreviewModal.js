@@ -24,22 +24,22 @@ export default function PreviewModal({ openedImage, onImageModalClose }) {
           <div className="spacebabez-mask" />
         </div>
         <Grid columns={2} stackable className="m-details">
-          <Grid.Column>Star: {openedImage?.star}</Grid.Column>
-          <Grid.Column>Power: {openedImage?.power}</Grid.Column>
-          <Grid.Column>Hairspray: {yn[openedImage?.hairspray]}</Grid.Column>
-          <Grid.Column>Alien Species: {openedImage?.species}</Grid.Column>
-          <Grid.Column>Accent Color: {openedImage?.accent}</Grid.Column>
-          <Grid.Column>Necklace: {openedImage?.necklace}</Grid.Column>
-          <Grid.Column>Accessory: {openedImage?.accessory}</Grid.Column>
-          <Grid.Column>Outfit: {openedImage?.outfit}</Grid.Column>
-          <Grid.Column>Boob Size: {openedImage?.boob}</Grid.Column>
-          <Grid.Column>Hair: {openedImage?.hair}</Grid.Column>
-          <Grid.Column>Earring: {openedImage?.earring}</Grid.Column>
-          <Grid.Column>Helmet: {yn[openedImage?.helmet]}</Grid.Column>
-          <Grid.Column>Weapon: {openedImage?.weapon}</Grid.Column>
-          <Grid.Column>Gloves: {openedImage?.glove}</Grid.Column>
-          <Grid.Column>Shoe: {openedImage?.shoe}</Grid.Column>
-          <Grid.Column>Vortex: {openedImage?.vortex}</Grid.Column>
+          <Grid.Column>Accent Color: {openedImage?.A}</Grid.Column>
+          <Grid.Column>Accessory: {openedImage?.A2}</Grid.Column>
+          <Grid.Column>Alien Species: {openedImage?.A3}</Grid.Column>
+          <Grid.Column>Boob Size: {openedImage?.B}</Grid.Column>
+          <Grid.Column>Earring: {openedImage?.E}</Grid.Column>
+          <Grid.Column>Gloves: {openedImage?.G}</Grid.Column>
+          <Grid.Column>Hair: {openedImage?.H}</Grid.Column>
+          <Grid.Column>Hairspray: {yn[openedImage?.H2]}</Grid.Column>
+          <Grid.Column>Helmet: {yn[openedImage?.H3]}</Grid.Column>
+          <Grid.Column>Necklace: {openedImage?.N}</Grid.Column>
+          <Grid.Column>Outfit: {openedImage?.O}</Grid.Column>
+          <Grid.Column>Power: {openedImage?.P}</Grid.Column>
+          <Grid.Column>Shoe: {openedImage?.S}</Grid.Column>
+          <Grid.Column>Star: {openedImage?.S2}</Grid.Column>
+          <Grid.Column>Vortex: {openedImage?.V}</Grid.Column>
+          <Grid.Column>Weapon: {openedImage?.W}</Grid.Column>
         </Grid>
         <Button onClick={onImageModalClose} style={{ marginTop: 15 }} inverted>
           Close

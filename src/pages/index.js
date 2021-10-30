@@ -220,32 +220,8 @@ const IndexPage = () => {
               />
             </Grid.Column>
             <Grid.Column>
-              <Star
-                value={selectedFilters.star}
-                onChange={handleFilterChange}
-              />
-            </Grid.Column>
-            <Grid.Column>
-              <Power
-                value={selectedFilters.power}
-                onChange={handleFilterChange}
-              />
-            </Grid.Column>
-            <Grid.Column>
-              <Species
-                value={selectedFilters.species}
-                onChange={handleFilterChange}
-              />
-            </Grid.Column>
-            <Grid.Column>
               <Accent
                 value={selectedFilters.accent}
-                onChange={handleFilterChange}
-              />
-            </Grid.Column>
-            <Grid.Column>
-              <Necklace
-                value={selectedFilters.necklace}
                 onChange={handleFilterChange}
               />
             </Grid.Column>
@@ -256,14 +232,8 @@ const IndexPage = () => {
               />
             </Grid.Column>
             <Grid.Column>
-              <Outfit
-                value={selectedFilters.outfit}
-                onChange={handleFilterChange}
-              />
-            </Grid.Column>
-            <Grid.Column>
-              <Hair
-                value={selectedFilters.hair}
+              <Species
+                value={selectedFilters.species}
                 onChange={handleFilterChange}
               />
             </Grid.Column>
@@ -280,8 +250,26 @@ const IndexPage = () => {
               />
             </Grid.Column>
             <Grid.Column>
-              <Weapon
-                value={selectedFilters.weapon}
+              <Hair
+                value={selectedFilters.hair}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Necklace
+                value={selectedFilters.necklace}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Outfit
+                value={selectedFilters.outfit}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Power
+                value={selectedFilters.power}
                 onChange={handleFilterChange}
               />
             </Grid.Column>
@@ -292,8 +280,20 @@ const IndexPage = () => {
               />
             </Grid.Column>
             <Grid.Column>
+              <Star
+                value={selectedFilters.star}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
               <Vortex
                 value={selectedFilters.vortex}
+                onChange={handleFilterChange}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Weapon
+                value={selectedFilters.weapon}
                 onChange={handleFilterChange}
               />
             </Grid.Column>
