@@ -15,6 +15,8 @@ for d in drops:
 
 for meta in metadata:
     for key in meta:
+        if key == 'id':
+            continue
         if key == 'power':
             for X in meta[key].split(' + '):
                 id = drops[key].index(X) + 1
@@ -24,6 +26,5 @@ for meta in metadata:
             data[key][id].append(meta["id"])
 
 for d in data:
-    if d == 'power':
-        with open(f'data/{d}.json', 'w+') as f:
-            json.dump(data[d], f)
+    with open(f'data/{d}.json', 'w+') as f:
+        json.dump(data[d], f)
