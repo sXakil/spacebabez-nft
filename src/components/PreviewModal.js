@@ -6,9 +6,9 @@ const yn = ["No", "Yes"];
 export default function PreviewModal({ openedImage, onImageModalClose }) {
   const label = `Space Babez #${openedImage?.id}`;
   const image =
-    "/babez/space_babez_" +
+    "https://spacebabez.io/images/space_babez_" +
     (openedImage?.id).toString().padStart(4, "0") +
-    ".png";
+    ".gif";
   return (
     <Modal
       size="small"
@@ -39,7 +39,7 @@ export default function PreviewModal({ openedImage, onImageModalClose }) {
           <Grid.Column>Weapon: {openedImage?.weapon}</Grid.Column>
           <Grid.Column>Gloves: {openedImage?.glove}</Grid.Column>
           <Grid.Column>Shoe: {openedImage?.shoe}</Grid.Column>
-          <Grid.Column>Signature: {yn[openedImage?.signature]}</Grid.Column>
+          <Grid.Column>Vortex: {openedImage?.vortex}</Grid.Column>
         </Grid>
         <Button onClick={onImageModalClose} style={{ marginTop: 15 }} inverted>
           Close
