@@ -17,8 +17,8 @@ export default function About() {
         <span className="blue"> #boobz</span>
       </p>
       <Embed
-        id="eh4iH7YLqAM"
-        placeholder="https://img.youtube.com/vi/eh4iH7YLqAM/maxresdefault.jpg"
+        id="dJU1LCTM9cE"
+        placeholder="https://img.youtube.com/vi/dJU1LCTM9cE/maxresdefault.jpg"
         source="youtube"
       />
       <p className="details highlight">
