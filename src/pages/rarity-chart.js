@@ -69,7 +69,7 @@ export default function RarityChart() {
                       <Table.Cell>{key}</Table.Cell>
                       <Table.Cell>{data[item][key]}</Table.Cell>
                       <Table.Cell textAlign="center">
-                        {Math.round((data[item][key] / 6666) * 100)}%
+                        {((data[item][key] / 6666) * 100).toFixed(2)}%
                       </Table.Cell>
                     </Table.Row>
                   ))}
