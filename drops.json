@@ -39,7 +39,6 @@
     "Yellow Body Suit"
   ],
   "accessory": [
-    "None",
     "Eyelite",
     "Pink Bubblegum",
     "Nerd Glasses",
@@ -56,10 +55,10 @@
     "Purple Bubblegum",
     "Neon Green Triangle Glasses",
     "Neon Pink Triangle Glasses",
-    "Scouter"
+    "Scouter",
+    "None"
   ],
   "earring": [
-    "None",
     "Blue Laser",
     "Cross",
     "Diamond",
@@ -76,10 +75,10 @@
     "Red Laser",
     "Ruby",
     "Sapphire",
-    "Triangle"
+    "Triangle",
+    "None"
   ],
   "necklace": [
-    "None",
     "Blood Vial",
     "Blue Neon",
     "Bullet",
@@ -96,10 +95,10 @@
     "Pink Neon",
     "Reflective",
     "Spiked",
-    "Vampire"
+    "Vampire",
+    "None"
   ],
   "glove": [
-    "None",
     "Blue Cybernetic",
     "Blue Laser Bracer",
     "Brass Knuckles",
@@ -117,7 +116,8 @@
     "Red Laser Bracer",
     "Space Gloves",
     "Spiked",
-    "White Neon Bracelet"
+    "White Neon Bracelet",
+    "None"
   ],
   "shoe": [
     "Barefoot",
@@ -168,7 +168,6 @@
     "Wavy"
   ],
   "weapon": [
-    "None",
     "Blue Laser Sword",
     "Charge Rifle",
     "Demon Blades",
@@ -191,7 +190,8 @@
     "Space Blaster",
     "Stripper Pole",
     "Taser",
-    "White Laser Whip"
+    "White Laser Whip",
+    "None"
   ],
   "helmet": ["No", "Yes"],
   "accent": [
@@ -221,7 +221,6 @@
     "Yellow"
   ],
   "power": [
-    "None",
     "Boob",
     "Cleopatra",
     "Dorothy",
@@ -232,7 +231,8 @@
     "Pussy",
     "Space",
     "Spiked",
-    "Style"
+    "Style",
+    "None"
   ],
   "star": ["Blue", "Green", "Multicolored", "Orange", "Purple", "Red", "Teal"],
   "vortex": [
