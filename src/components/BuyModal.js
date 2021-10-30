@@ -100,13 +100,19 @@ export default function BuyModal({ open, onClose }) {
             {prices.map((price) => (
               <tr
                 key={price.key}
-                style={{ color: price.key === 10 ? "#ff10f0" : "" }}
+                style={{ color: price.key === 10 ? "#9b6ede" : "" }}
               >
                 <td>{price.key}</td>
                 <td>{price.pp}</td>
                 <td>{price.total}</td>
               </tr>
             ))}
+            <tr>
+              <td colSpan={3} className="buyMore">
+                Buy<strong> 10 </strong> get
+                <strong> 1 </strong>for FREE!
+              </td>
+            </tr>
           </tbody>
         </table>
       </Modal.Content>

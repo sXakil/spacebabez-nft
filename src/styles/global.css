@@ -236,7 +236,15 @@ button.buyNow {
   cursor: pointer;
   justify-self: flex-end;
 }
-
+td.buyMore {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: #6164f7;
+}
+td.buyMore strong {
+  color: #ff10f0;
+}
 .socials {
   display: flex;
   flex-direction: row;
