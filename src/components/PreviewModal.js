@@ -37,7 +37,7 @@ export default function PreviewModal({ openedImage, onImageModalClose }) {
           <Grid.Column>Outfit: {openedImage?.O}</Grid.Column>
           <Grid.Column>Power: {openedImage?.P}</Grid.Column>
           <Grid.Column>Shoe: {openedImage?.S}</Grid.Column>
-          <Grid.Column>Star: {openedImage?.S2}</Grid.Column>
+          <Grid.Column>Stars: {openedImage?.S2}</Grid.Column>
           <Grid.Column>Vortex: {openedImage?.V}</Grid.Column>
           <Grid.Column>Weapon: {openedImage?.W}</Grid.Column>
         </Grid>

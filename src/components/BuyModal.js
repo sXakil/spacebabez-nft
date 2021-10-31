@@ -72,11 +72,11 @@ export default function BuyModal({ open, onClose }) {
           labelPosition="right"
           onClick={() => setCopied(true)}
           as={Clipboard}
-          data-clipboard-text="addr1v9avs43e8lu53k2upwddnzu0av4c7c5ac88mxehz6l682jql3maac"
+          data-clipboard-text="addr1v94naa8c3xz0an2q0kyc0yhvjln3rx3dv6p9nny5dfnl9qsyn54r6"
           title="Click to Copy"
           style={{ wordBreak: "break-word" }}
         >
-          addr1v9avs43e8lu53k2upwddnzu0av4c7c5ac88mxehz6l682jql3maac
+          addr1v94naa8c3xz0an2q0kyc0yhvjln3rx3dv6p9nny5dfnl9qsyn54r6
           <Icon name={copied ? "check" : "copy"} />
         </Button>
         <p style={{ margin: 10 }}>

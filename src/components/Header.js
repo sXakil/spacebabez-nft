@@ -4,28 +4,12 @@ import logo from "../images/space_babez_logo.png";
 
 export default function Header({ onBuyButtonClicked }) {
   const [ft, setFt] = useState(0);
-  const [timer, setTimer] = useState("00:00:00");
   const text = useRef(null);
   const typed = useRef(null);
   useEffect(() => {
     setFt(Math.floor(Math.random() * 14 + 1));
-    const countTo = new Date("2021-10-31T12:00:00").getTime();
-    const interval = setInterval(() => {
-      const distance = countTo - new Date().getTime();
-      setTimer(
-        `${Math.floor(distance / 3600000)
-          .toString()
-          .padStart(2, 0)}:${Math.floor((distance % 3600000) / 60000)
-          .toString()
-          .padStart(2, 0)}:${Math.floor((distance % 60000) / 1000)
-          .toString()
-          .padStart(2, 0)}`
-      );
-      if (distance < 0) clearInterval(interval);
-    }, 1000);
     return () => {
       typed.current?.destroy();
-      clearInterval(interval);
     };
   }, []);
   function resetTyped() {
@@ -61,16 +45,9 @@ export default function Header({ onBuyButtonClicked }) {
             alt="BABEZ 5"
             onLoad={resetTyped}
           />
-          <button
-            className="buyNow backdrop"
-            style={{ display: "none" }}
-            onClick={onBuyButtonClicked}
-          >
+          <button className="buyNow backdrop" onClick={onBuyButtonClicked}>
             {" "}
           </button>
-          <span className="label">Sale starts on Halloween</span>
-          <span className="time">{timer}</span>
-          <h1 aria-hidden="true" ref={text} />
         </div>
       </div>
     </div>
