@@ -48,6 +48,7 @@ export default function Header({ onBuyButtonClicked }) {
           <button className="buyNow backdrop" onClick={onBuyButtonClicked}>
             {" "}
           </button>
+          <h1 aria-hidden="true" ref={text} />
         </div>
       </div>
     </div>

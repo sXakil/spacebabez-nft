@@ -134,7 +134,6 @@ p.details.highlight {
   padding: 10px;
   margin-top: 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px 6px #151515 inset;
 }
 h1.section-header {
   text-align: center;
@@ -802,4 +801,38 @@ input[type="range"]:focus::-ms-fill-upper {
   right: 10px;
   top: 0;
   height: 60px;
+}
+div.policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #252525;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px #000000 inset;
+  transition: all 0.4s ease;
+}
+div.policy:hover {
+  box-shadow: none;
+}
+div.policy strong {
+  font-size: 26px;
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+  max-width: 300px;
+}
+
+div.policy p {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #9b6ede;
 }

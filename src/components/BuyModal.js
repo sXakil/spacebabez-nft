@@ -100,7 +100,7 @@ export default function BuyModal({ open, onClose }) {
             {prices.map((price) => (
               <tr
                 key={price.key}
-                style={{ color: price.key === 10 ? "#9b6ede" : "" }}
+                style={{ color: price.key === 10 ? "#b98dfc" : "" }}
               >
                 <td>{price.key}</td>
                 <td>{price.pp}</td>

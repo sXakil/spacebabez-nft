@@ -4,7 +4,7 @@ import { Dropdown } from "semantic-ui-react";
 const data = Array.from({ length: 6666 }).map((_, i) => ({
   text: "Space Babez #" + (i + 1),
   key: i,
-  value: i,
+  value: i + 1,
 }));
 
 export default function SearchInput({ selectedOptions = [], onSelected }) {

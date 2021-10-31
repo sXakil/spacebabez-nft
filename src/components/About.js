@@ -16,6 +16,10 @@ export default function About() {
         includes <span className="pink"> 2,142 </span> different types of
         <span className="blue"> #boobz</span>
       </p>
+      <div className="policy">
+        <strong>Policy ID</strong>
+        <p>3691ce00d8a2bd035a85d77e5428e34da58de9acbeedeee8256b8175</p>
+      </div>
       <Embed
         id="dJU1LCTM9cE"
         placeholder="https://img.youtube.com/vi/dJU1LCTM9cE/maxresdefault.jpg"
