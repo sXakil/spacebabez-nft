@@ -11,7 +11,7 @@ export default function ImageButton({ onClick, value }) {
   return (
     <button className="imgButton" onClick={onClick}>
       <div className="spacebabez-wrapper">
-        <LazyLoad height={486} offset={100}>
+        <LazyLoad height={486} offset={500}>
           <Image src={image} alt={"img" + value} className="spacebabez" />
         </LazyLoad>
       </div>
