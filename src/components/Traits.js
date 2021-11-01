@@ -1,13 +1,13 @@
-import { Link } from "gatsby";
 import React from "react";
-import { Image } from "semantic-ui-react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Traits() {
   return (
     <>
       <h1 className="section-header">TRAITS</h1>
       <Link to="rarity-chart">
-        <Image fluid centered src={"/ft/Space_Babez_Traits.png"} />
+        <StaticImage src="../images/Space_Babez_Traits.png" alt="BABEZ Logo" />
       </Link>
       <p className="details">
         Click the image above to see the breakdown of the different rarities

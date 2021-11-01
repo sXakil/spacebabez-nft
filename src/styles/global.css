@@ -132,7 +132,7 @@ p.details.highlight {
   background: #252525;
   color: #fefefe;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 25px;
   border-radius: 10px;
 }
 h1.section-header {
@@ -177,7 +177,6 @@ div.main-header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px;
 }
 .header-middle span.label {
   color: #ff10f0;
@@ -463,7 +462,7 @@ td.buyMore strong {
     max-width: 500px;
   }
   .header-middle {
-    width: 99%;
+    width: 100%;
   }
   .header-container {
     flex-direction: column;
@@ -802,37 +801,41 @@ input[type="range"]:focus::-ms-fill-upper {
   top: 0;
   height: 60px;
 }
-div.policy {
+a.policy {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-top: 25px;
   padding: 10px;
-  background-color: #252525;
   border-radius: 10px;
+  font-family: "VT323", "Courier New", Courier, monospace;
+  text-decoration: none;
+  background-color: #dec7fdf3;
+  outline: 4px solid #5b1abb;
+  box-shadow: -1px 1px 4px #cccccc inset;
   overflow: hidden;
-  box-shadow: 2px 2px 3px #000000 inset;
   transition: all 0.4s ease;
 }
-div.policy:hover {
-  box-shadow: none;
+a.policy:hover {
+  outline-color: #b37dff;
+  background-color: #dec7fd;
 }
-div.policy strong {
+a.policy strong {
   font-size: 26px;
   text-align: center;
   line-height: 1;
+  color: #363636;
   padding-bottom: 2px;
   margin-bottom: 8px;
   max-width: 300px;
 }
 
-div.policy p {
+a.policy p {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   word-break: break-all;
   word-wrap: break-word;
-  color: #9b6ede;
+  color: #5b1abb;
 }

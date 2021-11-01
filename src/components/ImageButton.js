@@ -10,12 +10,7 @@ export default function ImageButton({ onClick, value }) {
   return (
     <button className="imgButton" onClick={onClick}>
       <div className="spacebabez-wrapper">
-        <Image
-          src={image}
-          alt={"img" + value}
-          layout="fixed"
-          className="spacebabez"
-        />
+        <Image src={image} alt={"img" + value} className="spacebabez" />
       </div>
       <strong className="imgButtonLabel">{token}</strong>
     </button>

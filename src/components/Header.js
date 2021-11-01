@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import Typed from "typed.js";
-import logo from "../images/space_babez_logo.png";
-
 export default function Header({ onBuyButtonClicked }) {
-  const [ft, setFt] = useState(0);
+  const [ft, setFt] = useState(1);
   const text = useRef(null);
   const typed = useRef(null);
   useEffect(() => {
-    setFt(Math.floor(Math.random() * 14 + 1));
+    setFt(Math.round(Math.random() * 15));
+    resetTyped();
     return () => {
       typed.current?.destroy();
     };
@@ -35,16 +35,129 @@ export default function Header({ onBuyButtonClicked }) {
             </a>{" "}
             brings Ü
           </h1>
-          <img src={logo} className="logo" alt="BABEZ Logo" />
+          <div style={{ padding: "0 8px" }}>
+            <StaticImage
+              src="../images/space_babez_logo.png"
+              style={{ maxWidth: 700 }}
+              alt="BABEZ Logo"
+            />
+          </div>
           <h1 className="slogan">
             If you're gonna be hot, you might as well be hot in space...
           </h1>
-          <img
-            src={`/ft/${ft || 0}.png`}
-            className="babez"
-            alt="BABEZ 5"
-            onLoad={resetTyped}
-          />
+          {ft === 1 && (
+            <StaticImage
+              src={`../images/ft/1.png`}
+              imgClassName="babez"
+              alt="BABEZ 1"
+            />
+          )}
+          {ft === 2 && (
+            <StaticImage
+              src={`../images/ft/2.png`}
+              imgClassName="babez"
+              alt="BABEZ 2"
+            />
+          )}
+          {ft === 3 && (
+            <StaticImage
+              src={`../images/ft/3.png`}
+              imgClassName="babez"
+              alt="BABEZ 3"
+            />
+          )}
+          {ft === 4 && (
+            <StaticImage
+              src={`../images/ft/4.png`}
+              imgClassName="babez"
+              alt="BABEZ 4"
+            />
+          )}
+          {ft === 5 && (
+            <StaticImage
+              src={`../images/ft/5.png`}
+              imgClassName="babez"
+              alt="BABEZ 5"
+            />
+          )}
+          {ft === 6 && (
+            <StaticImage
+              src={`../images/ft/6.png`}
+              imgClassName="babez"
+              alt="BABEZ 6"
+            />
+          )}
+          {ft === 7 && (
+            <StaticImage
+              src={`../images/ft/7.png`}
+              imgClassName="babez"
+              alt="BABEZ 7"
+            />
+          )}
+          {ft === 8 && (
+            <StaticImage
+              src={`../images/ft/8.png`}
+              imgClassName="babez"
+              alt="BABEZ 8"
+            />
+          )}
+          {ft === 9 && (
+            <StaticImage
+              src={`../images/ft/9.png`}
+              imgClassName="babez"
+              alt="BABEZ 9"
+            />
+          )}
+          {ft === 10 && (
+            <StaticImage
+              src={`../images/ft/10.png`}
+              imgClassName="babez"
+              alt="BABEZ 10"
+            />
+          )}
+          {ft === 11 && (
+            <StaticImage
+              src={`../images/ft/11.png`}
+              imgClassName="babez"
+              alt="BABEZ 11"
+            />
+          )}
+          {ft === 12 && (
+            <StaticImage
+              src={`../images/ft/12.png`}
+              imgClassName="babez"
+              alt="BABEZ 12"
+            />
+          )}
+          {ft === 13 && (
+            <StaticImage
+              src={`../images/ft/13.png`}
+              imgClassName="babez"
+              alt="BABEZ 13"
+            />
+          )}
+          {ft === 14 && (
+            <StaticImage
+              src={`../images/ft/14.png`}
+              imgClassName="babez"
+              alt="BABEZ 14"
+            />
+          )}
+          {ft === 15 && (
+            <StaticImage
+              src={`../images/ft/15.png`}
+              imgClassName="babez"
+              alt="BABEZ 15"
+            />
+          )}
+          {ft === 16 && (
+            <StaticImage
+              src={`../images/ft/16.png`}
+              imgClassName="babez"
+              alt="BABEZ 16"
+            />
+          )}
+
           <button className="buyNow backdrop" onClick={onBuyButtonClicked}>
             {" "}
           </button>
