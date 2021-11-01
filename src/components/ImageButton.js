@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
 import { Image } from "semantic-ui-react";
 
 export default function ImageButton({ onClick, value }) {
@@ -10,7 +11,9 @@ export default function ImageButton({ onClick, value }) {
   return (
     <button className="imgButton" onClick={onClick}>
       <div className="spacebabez-wrapper">
-        <Image src={image} alt={"img" + value} className="spacebabez" />
+        <LazyLoad height={486} offset={100}>
+          <Image src={image} alt={"img" + value} className="spacebabez" />
+        </LazyLoad>
       </div>
       <strong className="imgButtonLabel">{token}</strong>
     </button>

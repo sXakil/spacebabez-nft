@@ -31,6 +31,7 @@
     "react-clipboard.js": "^2.0.16",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-lazyload": "^3.2.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
     "typed.js": "^2.0.12"

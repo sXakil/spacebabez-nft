@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Typed from "typed.js";
 export default function Header({ onBuyButtonClicked }) {
-  const [ft, setFt] = useState(1);
+  const [ft, setFt] = useState(null);
   const text = useRef(null);
   const typed = useRef(null);
   useEffect(() => {
@@ -38,6 +38,7 @@ export default function Header({ onBuyButtonClicked }) {
           <div style={{ padding: "0 8px" }}>
             <StaticImage
               src="../images/space_babez_logo.png"
+              imgClassName="logo"
               style={{ maxWidth: 700 }}
               alt="BABEZ Logo"
             />
@@ -45,6 +46,13 @@ export default function Header({ onBuyButtonClicked }) {
           <h1 className="slogan">
             If you're gonna be hot, you might as well be hot in space...
           </h1>
+          {ft === 0 && (
+            <StaticImage
+              src={`../images/ft/0.png`}
+              imgClassName="babez"
+              alt="BABEZ 0"
+            />
+          )}
           {ft === 1 && (
             <StaticImage
               src={`../images/ft/1.png`}
@@ -150,14 +158,6 @@ export default function Header({ onBuyButtonClicked }) {
               alt="BABEZ 15"
             />
           )}
-          {ft === 16 && (
-            <StaticImage
-              src={`../images/ft/16.png`}
-              imgClassName="babez"
-              alt="BABEZ 16"
-            />
-          )}
-
           <button className="buyNow backdrop" onClick={onBuyButtonClicked}>
             {" "}
           </button>
