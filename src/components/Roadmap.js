@@ -37,6 +37,7 @@ const data = [
     "Space Babez real life toy made. (Community will vote on which Space Babez to have made). Limited run edition.",
     "More clothing designs made. ",
     "Issue #3 Space Babez comicbook created.",
+    "Smart Contract marketplace created",
   ],
 ];
 
