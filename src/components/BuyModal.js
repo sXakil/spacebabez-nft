@@ -65,7 +65,7 @@ export default function BuyModal({ open, onClose }) {
           background: "#151515",
         }}
       >
-        <h1 style={{ color: "#22ba1a", fontSize: 46 }}>6138 Babez Left!</h1>
+        <h1 style={{ color: "#22ba1a", fontSize: 46 }}>6068 Babez Left!</h1>
         <Button
           positive
           icon
@@ -109,8 +109,8 @@ export default function BuyModal({ open, onClose }) {
             ))}
             <tr>
               <td colSpan={3} className="buyMore">
-                Buy<strong> 10 </strong> get
-                <strong> 1 </strong>for FREE!
+                Buy<strong> 10 </strong> for the price of
+                <strong> 9</strong>!
               </td>
             </tr>
           </tbody>

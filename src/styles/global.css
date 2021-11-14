@@ -627,6 +627,9 @@ td.buyMore strong {
   height: 600px;
   overflow-y: scroll;
 }
+.splide {
+  overflow: hidden;
+}
 .splide__slide.is-active {
   opacity: 1;
   border-bottom: dashed 5px yellow;
