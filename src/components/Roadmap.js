@@ -7,12 +7,12 @@ const data = [
     "Develop Space Babez website, add rarity chart & searchable filters.",
     "Build Space Babez community",
     "Launch sale",
-    "Make clothes featuring Space Babez artwork",
   ],
   ["Add Space Babez to Anti.biz lore"],
   [
     "Create limited run Series #1 3D digital toy version of the most voted on Space Babez as a unique limited edition NFT. Max supply 100.",
-    "Hire @eliza.Osmo (Instagram) to create 1 of a kind T-shirt design featuring Space Babez.",
+    'Hire <a href="https://www.instagram.com/eliza.Osmo/" target="_blank" _blank" rel="noreferrer">@eliza.Osmo</a> to create 1 of a kind T-shirt design featuring Space Babez.',
+    '<a href="https://cnft.tools/" target="_blank" _blank" rel="noreferrer">CNFT.tools</a> listing',
   ],
   [
     "Hire artist to draw issue #1 of Space Babez comicbook. Print 1,000-2,000 copies, put digital copy of comicbook on website as a free digital download.",
@@ -35,7 +35,6 @@ const data = [
   ],
   [
     "Space Babez real life toy made. (Community will vote on which Space Babez to have made). Limited run edition.",
-    "More clothing designs made. ",
     "Issue #3 Space Babez comicbook created.",
     "Smart Contract marketplace created",
   ],
@@ -149,7 +148,7 @@ export default function Roadmap() {
                       >
                         {"🚀"}
                       </span>{" "}
-                      <span>{item}</span>
+                      <span dangerouslySetInnerHTML={{ __html: item }} />
                     </div>
                   ))}
                 </div>

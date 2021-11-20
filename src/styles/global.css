@@ -823,3 +823,7 @@ a.policy p {
   word-wrap: break-word;
   color: #5b1abb;
 }
+
+a#wd:hover {
+  cursor: url("../images/wapp.png"), auto;
+}
