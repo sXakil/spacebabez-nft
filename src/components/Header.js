@@ -30,7 +30,12 @@ export default function Header({ onBuyButtonClicked }) {
         <div className="header-middle">
           <h1 className="prime">
             From the creators of{" "}
-            <a href="https://ooz1es.io" target="_blank" rel="noreferrer">
+            <a
+              href="https://ooz1es.io"
+              id="oz"
+              target="_blank"
+              rel="noreferrer"
+            >
               OOZ1ES
             </a>{" "}
             brings Ü

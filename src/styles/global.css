@@ -827,3 +827,6 @@ a.policy p {
 a#wd:hover {
   cursor: url("../images/wapp.png"), auto;
 }
+a#oz:hover {
+  cursor: url("../images/o.png"), auto;
+}

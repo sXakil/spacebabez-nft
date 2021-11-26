@@ -40,7 +40,7 @@ const data = [
   {
     title: "Who is the team that created Space Babez?",
     description:
-      'The team is made up of the creator <a href="https://www.Twitter.com/diicasses" target="_blank" rel="noreferrer">@diicasses</a>, artist  <a href="https://instagram.com/cryptomuseumnft" target="_blank" rel="noreferrer">@cryptomuseumnft</a> coding, backend sales, and the <a id="wd" target="_blank" rel="noreferrer" href="https://wa.me/+8801861590250">web developer</a>. Which is all a part of the business <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a>',
+      'The team is made up of the creator <a href="https://www.Twitter.com/diicasses" target="_blank" rel="noreferrer">@diicasses</a>, artist  <a href="https://instagram.com/cryptomuseumnft" target="_blank" rel="noreferrer">@cryptomuseumnft</a>, coding <a href="#">peanut#1175</a> (Discord), <a href="https://easycnft.art/" target="_blank" rel="noreferrer">backend sales</a>, and the <a id="wd" target="_blank" rel="noreferrer" href="https://wa.me/+8801861590250">web developer</a>. Which is all a part of the business <a href="https://anti.biz" target="_blank" rel="noreferrer">Anti.biz</a>',
   },
   {
     title: "Who is Dii Casses?",

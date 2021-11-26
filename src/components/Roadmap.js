@@ -8,7 +8,7 @@ const data = [
     "Build Space Babez community",
     "Launch sale",
   ],
-  ["Add Space Babez to Anti.biz lore"],
+  ["Add Space Babez to Anti.biz lore", "Increase marketing & promotion"],
   [
     "Create limited run Series #1 3D digital toy version of the most voted on Space Babez as a unique limited edition NFT. Max supply 100.",
     'Hire <a href="https://www.instagram.com/eliza.Osmo/" target="_blank" _blank" rel="noreferrer">@eliza.Osmo</a> to create 1 of a kind T-shirt design featuring Space Babez.',
@@ -45,10 +45,11 @@ const valData = [96, 92, 84, 75, 67, 58, 50, 41, 33, 16];
 let splide = null;
 
 export default function Roadmap() {
-  const [range, setRange] = useState(0);
-  const [img, setImg] = useState(0);
+  const [range, setRange] = useState(1);
+  const [img, setImg] = useState(1);
   function initSplide() {
     splide = new Splide(".splide", {
+      start: 1,
       arrows: false,
       direction: "ttb",
       height: 600,
