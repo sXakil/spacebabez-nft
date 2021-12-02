@@ -65,7 +65,7 @@ export default function BuyModal({ open, onClose }) {
           background: "#151515",
         }}
       >
-        <h1 style={{ color: "#22ba1a", fontSize: 46 }}>6068 Babez Left!</h1>
+        <h1 style={{ color: "#22ba1a", fontSize: 46 }}>4814 Babez Left!</h1>
         <Button
           positive
           icon
@@ -80,7 +80,7 @@ export default function BuyModal({ open, onClose }) {
           <Icon name={copied ? "check" : "copy"} />
         </Button>
         <p style={{ margin: 10 }}>
-          Please send<span className="pink"> 9 ₳ADA </span>to the above address
+          Please send<span className="pink"> 9 ₳ADA </span>to the address above
           to receive<span className="pink"> 1 </span>Space Babez, to receive
           more Babez please send the amount listed on the chart below.
         </p>

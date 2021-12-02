@@ -10,7 +10,7 @@ const data = [
   ],
   ["Add Space Babez to Anti.biz lore", "Increase marketing & promotion"],
   [
-    "Create limited run Series #1 3D digital toy version of the most voted on Space Babez as a unique limited edition NFT. Max supply 100.",
+    "Airdrop Series #1 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
     'Hire <a href="https://www.instagram.com/eliza.Osmo/" target="_blank" _blank" rel="noreferrer">@eliza.Osmo</a> to create 1 of a kind T-shirt design featuring Space Babez.',
     '<a href="https://cnft.tools/" target="_blank" _blank" rel="noreferrer">CNFT.tools</a> listing',
   ],
@@ -18,20 +18,20 @@ const data = [
     "Hire artist to draw issue #1 of Space Babez comicbook. Print 1,000-2,000 copies, put digital copy of comicbook on website as a free digital download.",
   ],
   [
-    "Series #2 3D digital toy to celebrate 40% Space Babez sold. Max supply 100.",
+    "Airdrop Series #2 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
   ],
   [
-    "Series #3 3D digital toy to celebrate 50% Space Babez sold. Max supply 100.",
+    "Airdrop Series #3 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
   ],
   ["Issue #2 Space Babez comicbook created"],
   [
-    "Series #4 3D digital toy to celebrate 70% Space Babez sold. Max supply 100.",
+    "Airdrop Series #4 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
   ],
   [
-    "Series #5 3D digital toy to celebrate 80% Space Babez sold. Max supply 100. ",
+    "Airdrop Series #5 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
   ],
   [
-    "Series #6 3D digital toy to celebrate 90% Space Babez sold. Max supply 100. ",
+    "Airdrop Series #6 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
   ],
   [
     "Space Babez real life toy made. (Community will vote on which Space Babez to have made). Limited run edition.",
@@ -45,11 +45,11 @@ const valData = [96, 92, 84, 75, 67, 58, 50, 41, 33, 16];
 let splide = null;
 
 export default function Roadmap() {
-  const [range, setRange] = useState(1);
-  const [img, setImg] = useState(1);
+  const [range, setRange] = useState(2);
+  const [img, setImg] = useState(2);
   function initSplide() {
     splide = new Splide(".splide", {
-      start: 1,
+      start: 2,
       arrows: false,
       direction: "ttb",
       height: 600,
