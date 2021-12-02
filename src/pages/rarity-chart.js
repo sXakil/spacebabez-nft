@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Header, Table } from "semantic-ui-react";
 import { Helmet } from "react-helmet";
 import chart from "../data/rarity.json";
 import { Link } from "gatsby";
 
 export default function RarityChart() {
+  useEffect(() => {
+    const styles =
+      "color: yellow;background: black;font-size: 18px;border-left: 1px solid red;border-right: 1px solid red;padding: 10px";
+    console.log(
+      "%cHi Stranger!                          \n" +
+        "Creator: https://twitter.com/diicasses\n" +
+        "Web Dev: https://wa.me/+8801861590250 ",
+      styles
+    );
+  }, []);
   return (
     <>
       <Helmet>

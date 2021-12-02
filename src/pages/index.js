@@ -149,6 +149,14 @@ const IndexPage = () => {
       threshold: 1.0,
     });
     observer.observe(loadingRef.current);
+    const styles =
+      "color: yellow;background: black;font-size: 18px;border-left: 1px solid red;border-right: 1px solid red;padding: 10px";
+    console.log(
+      "%cHi Stranger!                          \n" +
+        "Creator: https://twitter.com/diicasses\n" +
+        "Web Dev: https://wa.me/+8801861590250 ",
+      styles
+    );
   }, []);
 
   function onImageModalOpen(val) {
