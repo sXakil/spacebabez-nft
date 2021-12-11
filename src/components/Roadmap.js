@@ -41,15 +41,16 @@ const data = [
 ];
 
 const valData = [96, 92, 84, 75, 67, 58, 50, 41, 33, 16];
+const _init_slide = 4;
 
 let splide = null;
 
 export default function Roadmap() {
-  const [range, setRange] = useState(2);
-  const [img, setImg] = useState(2);
+  const [range, setRange] = useState(_init_slide);
+  const [img, setImg] = useState(_init_slide);
   function initSplide() {
     splide = new Splide(".splide", {
-      start: 2,
+      start: _init_slide,
       arrows: false,
       direction: "ttb",
       height: 600,

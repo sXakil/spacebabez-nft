@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Image, Grid, Label, Button } from "semantic-ui-react";
+import { Modal, Image, Grid, Button } from "semantic-ui-react";
 
 const yn = ["No", "Yes"];
 
@@ -23,10 +23,6 @@ export default function PreviewModal({ openedImage, onImageModalClose }) {
           <Image src={image} alt={label} layout="fixed" className="modal-img" />
           <div className="spacebabez-mask" />
         </div>
-        <Label color='red' size="huge" horizontal>
-          Rank #{openedImage?.R}
-        </Label>
-        <br/>
         <Grid columns={2} stackable className="m-details">
           <Grid.Column>Accent Color: {openedImage?.A}</Grid.Column>
           <Grid.Column>Accessory: {openedImage?.A2}</Grid.Column>
