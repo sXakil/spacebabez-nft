@@ -224,8 +224,8 @@ const IndexPage = () => {
             </li>
             <li>
               Check out our secondary market sales here{" "}
-              <a href="https://cnft.tools/spacebabez" target="_blank">
-                https://cnft.tools/spacebabez
+              <a href="https://opencnft.io/eEGjZJRB5LcoM32zDa8" target="_blank">
+                https://opencnft.io/eEGjZJRB5LcoM32zDa8
               </a>
             </li>
             <li>

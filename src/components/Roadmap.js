@@ -34,7 +34,7 @@ const data = [
     "3D Space Babez Toy #6 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
   ],
   [
-    "Space Babez real life toy made. (Community will vote on which Space Babez to have made). Limited run edition.",
+    "Space Babez real life toy made. (Community will vote on which Space Babez to have made, hodlers of 100+ Space Babez will get toy.)",
     "Issue #3 Space Babez comicbook created.",
   ],
 ];
