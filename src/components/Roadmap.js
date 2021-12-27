@@ -10,7 +10,7 @@ const data = [
   ],
   ["Add Space Babez to Anti.biz lore", "Increase marketing & promotion"],
   [
-    "Airdrop Series #1 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
+    "3D Space Babez Toy #1 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
     'Hire <a href="https://www.instagram.com/eliza.Osmo/" target="_blank" _blank" rel="noreferrer">@eliza.Osmo</a> to create 1 of a kind T-shirt design featuring Space Babez.',
     '<a href="https://cnft.tools/" target="_blank" _blank" rel="noreferrer">CNFT.tools</a> listing',
   ],
@@ -18,20 +18,20 @@ const data = [
     "Hire artist to draw issue #1 of Space Babez comicbook. Print 1,000-2,000 copies, put digital copy of comicbook on website as a free digital download.",
   ],
   [
-    "Airdrop Series #2 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
+    "3D Space Babez Toy #2 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
   ],
   [
-    "Airdrop Series #3 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
+    "3D Space Babez Toy #3 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
   ],
   ["Issue #2 Space Babez comicbook created"],
   [
-    "Airdrop Series #4 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
+    "3D Space Babez Toy #4 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
   ],
   [
-    "Airdrop Series #5 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
+    "3D Space Babez Toy #5 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
   ],
   [
-    "Airdrop Series #6 3D digital toy to 30 random Space Babez holders as a unique limited edition NFT. Max supply 30. (anyone that purchases package of 10 will automatically be entered.)",
+    "3D Space Babez Toy #6 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
   ],
   [
     "Space Babez real life toy made. (Community will vote on which Space Babez to have made). Limited run edition.",
