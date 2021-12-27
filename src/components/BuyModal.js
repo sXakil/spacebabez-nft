@@ -65,7 +65,7 @@ export default function BuyModal({ open, onClose }) {
           background: "#151515",
         }}
       >
-        <h1 style={{ color: "#22ba1a", fontSize: 46 }}>3827 Babez Left!</h1>
+        <h1 style={{ color: "#22ba1a", fontSize: 46 }}>3100 Babez Left!</h1>
         <Button
           positive
           icon

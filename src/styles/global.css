@@ -830,3 +830,34 @@ a#wd:hover {
 a#oz:hover {
   cursor: url("../images/o.png"), auto;
 }
+.ext-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px #444 solid;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.ext-links h1.section-header {
+  font-size: 38px;
+}
+.ext-links ul {
+  margin: 0;
+  list-style: square;
+}
+.ext-links ul ul {
+  list-style: none;
+}
+.ext-links ul ul li::before {
+  content: "⇨";
+  margin-right: 16px;
+  font-size: smaller;
+}
+.ext-links a::after {
+  content: "◳";
+  margin-left: 8px;
+  font-size: smaller;
+}

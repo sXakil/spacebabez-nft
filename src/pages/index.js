@@ -213,6 +213,49 @@ const IndexPage = () => {
       <Container text style={{ marginTop: 20 }}>
         <About />
         <Faq />
+        <div className="ext-links">
+          <h1 className="section-header">External Links</h1>
+          <ul>
+            <li>
+              We are now listed at cnft.tools{" "}
+              <a href="https://cnft.tools/spacebabez" target="_blank">
+                https://cnft.tools/spacebabez
+              </a>
+            </li>
+            <li>
+              Check out our secondary market sales here{" "}
+              <a href="https://cnft.tools/spacebabez" target="_blank">
+                https://cnft.tools/spacebabez
+              </a>
+            </li>
+            <li>
+              Verified on{" "}
+              <ul>
+                <li>
+                  <a
+                    href="https://cnft.io/marketplace?st=spacebabez"
+                    target="_blank"
+                  >
+                    CNFT.io
+                  </a>
+                </li>
+                <li>
+                  <a href="https://nftjam.io/space-babez" target="_blank">
+                    NFTJam.io
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.genesishouse.io/collections/1488"
+                    target="_blank"
+                  >
+                    Genesishouse.io
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </Container>
       <Roadmap />
       <div className="fade-start">

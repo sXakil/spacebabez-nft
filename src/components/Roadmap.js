@@ -36,12 +36,11 @@ const data = [
   [
     "Space Babez real life toy made. (Community will vote on which Space Babez to have made). Limited run edition.",
     "Issue #3 Space Babez comicbook created.",
-    "Smart Contract marketplace created",
   ],
 ];
 
 const valData = [96, 92, 84, 75, 67, 58, 50, 41, 33, 16];
-const _init_slide = 4;
+const _init_slide = 5;
 
 let splide = null;
 
