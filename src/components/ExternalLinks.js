@@ -12,7 +12,7 @@ export default function ExternalLinks() {
         {open && (
           <ul>
             <li>
-              We are now listed at cnft.tools{" "}
+              We are now listed on cnft.tools{" "}
               <a
                 href="https://cnft.tools/spacebabez"
                 target="_blank"

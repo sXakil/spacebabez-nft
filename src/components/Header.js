@@ -1,11 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Typed from "typed.js";
-const ft = Math.floor(Math.random() * 15);
 export default function Header({ onBuyButtonClicked }) {
+  const [ft, setFt] = useState(16);
   const text = useRef(null);
   const typed = useRef(null);
   useEffect(() => {
+    setFt(Math.floor(Math.random() * 15));
     resetTyped();
     return () => {
       typed.current?.destroy();
@@ -50,6 +51,13 @@ export default function Header({ onBuyButtonClicked }) {
           <h1 className="slogan">
             If you're gonna be hot, you might as well be hot in space...
           </h1>
+          {ft === 16 && (
+            <StaticImage
+              src={`../images/ft/16.png`}
+              imgClassName="babez"
+              alt="BABEZ 15"
+            />
+          )}
           {ft === 0 && (
             <StaticImage
               src={`../images/ft/0.png`}
