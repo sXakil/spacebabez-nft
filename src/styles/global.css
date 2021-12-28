@@ -837,19 +837,31 @@ a#oz:hover {
   background-color: rgba(255, 255, 255, 0.05);
   border: 2px #444 solid;
   border-radius: 20px;
-  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
+.ext-links button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .ext-links h1.section-header {
+  color: #fff;
+  margin: 0;
   font-size: 38px;
 }
-.ext-links ul {
-  margin: 0;
+.ext-links > ul {
   list-style: square;
+  padding-bottom: 20px;
+  margin: 0 10px;
 }
 .ext-links ul ul {
   list-style: none;
+}
+.ext-links li {
+  word-break: break-all;
+  word-wrap: break-word;
 }
 .ext-links ul ul li::before {
   content: "⇨";
