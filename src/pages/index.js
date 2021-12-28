@@ -10,6 +10,8 @@ import BuyModal from "../components/BuyModal";
 import MetaTags from "../components/MetaTags";
 import Roadmap from "../components/Roadmap";
 import ExternalLinks from "../components/ExternalLinks";
+import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const Explorer = loadable(() => import("../components/filters/Explorer"), {
   fallback: (
@@ -71,10 +73,19 @@ const IndexPage = () => {
       <Container text style={{ marginTop: 20 }}>
         <About />
         <Faq />
+        <Link to="/paper" className="paper-link">
+          <StaticImage
+            width={107}
+            height={100}
+            src="../images/space_paper.png"
+            alt="Paper"
+            layout="fixed"
+          />
+          <h1 className="section-header">Space Paper</h1>
+        </Link>
         <ExternalLinks />
       </Container>
       <Roadmap />
-
       <Container text style={{ paddingTop: 20, paddingBottom: 20 }}>
         <Shop />
         <Traits />

@@ -106,7 +106,7 @@ export default function FAQ() {
             animation="vertical flip"
             duration={200}
           >
-            <Icon color="black" name="angle double down" size="large" />
+            <Icon color="white" name="angle double down" size="large" />
           </Transition>
         </div>
       </Button>

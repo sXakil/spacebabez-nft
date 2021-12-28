@@ -756,9 +756,8 @@ input[type="range"]:focus::-ms-fill-upper {
   position: relative;
   padding: 20px;
   border: none !important;
-  background-color: #cdcdcd !important;
-  box-shadow: 1px 1px 3px #888888;
-  outline: 1px solid #888888;
+  background-color: #252525 !important;
+  outline: 4px solid #222;
   transition: all 0.3s ease;
 }
 .ui.basic.button.opened {
@@ -775,7 +774,7 @@ input[type="range"]:focus::-ms-fill-upper {
 .faq-button span {
   font-size: 38px;
   font-weight: bold;
-  color: #353535;
+  color: #ffffff;
 }
 .faq-button div.trw {
   position: absolute;
@@ -784,6 +783,7 @@ input[type="range"]:focus::-ms-fill-upper {
   right: 10px;
   top: 0;
   height: 60px;
+  color: #ffffff;
 }
 a.policy {
   display: flex;
@@ -834,9 +834,9 @@ a#oz:hover {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 2px #444 solid;
-  border-radius: 20px;
+  background-color: #252525 !important;
+  outline: 4px solid #222;
+  border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
@@ -972,4 +972,28 @@ a.downloader:hover {
 }
 a.downloader.green:hover {
   background-color: rgba(33, 186, 69, 0.1);
+}
+.paper-link {
+  margin-top: 20px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #a333c8 inset;
+  background-color: rgba(163, 51, 200, 0.05);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease-in-out;
+}
+.paper-link h1 {
+  margin: 0;
+  margin-left: 15px;
+  color: white;
+}
+.paper-link:hover {
+  background-color: rgba(163, 51, 200, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
