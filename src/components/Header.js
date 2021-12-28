@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Typed from "typed.js";
-const ft = Math.round(Math.random() * 15);
 export default function Header({ onBuyButtonClicked }) {
   const text = useRef(null);
   const typed = useRef(null);
@@ -45,12 +44,19 @@ export default function Header({ onBuyButtonClicked }) {
               imgClassName="logo"
               style={{ maxWidth: 700 }}
               alt="BABEZ Logo"
+              placeholder="blurred"
             />
           </div>
           <h1 className="slogan">
             If you're gonna be hot, you might as well be hot in space...
           </h1>
-          <img src={`/ft/${ft}.png`} className="babez" alt={`BABEZ ${ft}`} />
+          <StaticImage
+            src={`../images/ft/0.png`}
+            imgClassName="babez"
+            alt="BABEZ 0"
+            loading="eager"
+            placeholder="blurred"
+          />
           <button className="buyNow backdrop" onClick={onBuyButtonClicked}>
             {" "}
           </button>
