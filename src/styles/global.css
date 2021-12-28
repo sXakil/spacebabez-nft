@@ -873,3 +873,103 @@ a#oz:hover {
   margin-left: 8px;
   font-size: smaller;
 }
+
+.paper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000000;
+  padding: 15px;
+  margin: 20px 5px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 767px) {
+  .ui.container.paper {
+    width: auto !important;
+    border-radius: 0;
+    margin-top: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+.paper h1 {
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Noto Serif", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.paper p,
+.paper ul li,
+.paper ol li {
+  color: #222222;
+  margin-bottom: 12px;
+}
+.paper ul {
+  list-style: circle;
+}
+.paper ul,
+.paper ol {
+  margin-top: 0;
+}
+.paper ol li {
+  padding-left: 10px;
+}
+.paper-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paper-content li,
+.paper-content p,
+.paper-content span {
+  font-family: "Noto Serif", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  line-height: 1.4;
+  font-size: 16px;
+  text-align: left;
+}
+.paper p {
+  font-size: 16px;
+  font-family: "Noto Serif", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.paper .paper-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.paper-title span {
+  color: #0011ff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.paper-content .gatsby-image-wrapper {
+  margin-bottom: 15px;
+}
+.paper-content pre {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 0;
+}
+a.downloader {
+  color: #a333c8 !important;
+  display: flex;
+  align-items: center;
+  border: 2px solid #a333c8;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+a.downloader.green {
+  color: #21ba45 !important;
+  border-color: #21ba45;
+}
+a.downloader:hover {
+  background-color: rgba(162, 51, 199, 0.1);
+}
+a.downloader.green:hover {
+  background-color: rgba(33, 186, 69, 0.1);
+}

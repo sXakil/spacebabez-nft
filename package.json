@@ -20,6 +20,7 @@
     "cb": "move .\\public\\ft .\\ &&  gatsby clean && gatsby build && move .\\ft .\\public\\"
   },
   "dependencies": {
+    "@fontsource/noto-serif": "^4.5.1",
     "@fontsource/vt323": "^4.5.0",
     "@loadable/component": "^5.15.2",
     "@splidejs/splide": "^3.0.6",
@@ -33,6 +34,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-lazyload": "^3.2.0",
+    "react-syntax-highlighter": "^15.4.5",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
     "typed.js": "^2.0.12"

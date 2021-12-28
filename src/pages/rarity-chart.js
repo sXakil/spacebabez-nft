@@ -19,6 +19,7 @@ export default function RarityChart() {
     <>
       <Helmet>
         <title>Spacebabez - Rarity Chart</title>
+        <link rel="icon" type="image/png" href="/ft/favicon-32x32.png" />
       </Helmet>
       <Header
         textAlign="center"
