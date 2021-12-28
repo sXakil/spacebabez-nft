@@ -4,6 +4,7 @@ import { Modal, Image, Grid, Button } from "semantic-ui-react";
 const yn = ["No", "Yes"];
 
 export default function PreviewModal({ openedImage, onImageModalClose }) {
+  if (openedImage === null) return null;
   const label = `Space Babez #${openedImage?.id}`;
   const image =
     "https://spacebabez.io/images/space_babez_" +

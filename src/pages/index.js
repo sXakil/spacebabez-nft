@@ -356,17 +356,14 @@ const IndexPage = () => {
           }}
         ></div>
       </div>
-      {openedImage ? (
-        <PreviewModal
-          openedImage={openedImage}
-          onImageModalClose={onImageModalClose}
-        />
-      ) : (
-        <BuyModal
-          open={openedBuyModal}
-          onClose={() => setOpenedBuyModal(false)}
-        />
-      )}
+      <PreviewModal
+        openedImage={openedImage}
+        onImageModalClose={onImageModalClose}
+      />
+      <BuyModal
+        open={openedBuyModal}
+        onClose={() => setOpenedBuyModal(false)}
+      />
     </>
   );
 };
