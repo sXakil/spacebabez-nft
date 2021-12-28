@@ -559,7 +559,11 @@ def generateBG(bgColor):
           <br />
           <p>Download all the Space Babez with our torrent here</p>
           <p>
-            <a download href="/ft/babez.torrent" className="downloader green">
+            <a
+              download
+              href="/ft/SpaceBabez.torrent"
+              className="downloader green"
+            >
               <i
                 aria-hidden="true"
                 className="large magnet fitted icon green"
