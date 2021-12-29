@@ -3,48 +3,16 @@ import { Button, Icon, Modal } from "semantic-ui-react";
 import Clipboard from "react-clipboard.js";
 
 const prices = [
-  {
-    key: 1,
-    pp: "9 ₳ADA",
-    total: "9 ₳ADA",
-  },
-  {
-    key: 2,
-    pp: "8.5 ₳ADA",
-    total: "17 ₳ADA",
-  },
-  {
-    key: 3,
-    pp: "8.33 ₳ADA",
-    total: "25 ₳ADA",
-  },
-  {
-    key: 4,
-    pp: "8.25 ₳ADA",
-    total: "33 ₳ADA",
-  },
-  {
-    key: 5,
-    pp: "8.2 ₳ADA",
-    total: "41 ₳ADA",
-  },
-  {
-    key: 6,
-    pp: "8.16 ₳ADA",
-    total: "49 ₳ADA",
-  },
-  {
-    key: 7,
-    pp: "8.14 ₳ADA",
-    total: "57 ₳ADA",
-  },
-  {
-    key: 8,
-    pp: "8.12 ₳ADA",
-    total: "65 ₳ADA",
-  },
-  { key: 9, pp: "8.11 ₳ADA", total: "73 ₳ADA" },
-  { key: 10, pp: "8.1 ₳ADA", total: "81 ₳ADA" },
+  { key: 1, total: "10 ₳ADA" },
+  { key: 2, total: "20 ₳ADA" },
+  { key: 3, total: "30 ₳ADA" },
+  { key: 4, total: "40 ₳ADA" },
+  { key: 5, total: "50 ₳ADA" },
+  { key: 6, total: "60 ₳ADA" },
+  { key: 7, total: "70 ₳ADA" },
+  { key: 8, total: "80 ₳ADA" },
+  { key: 9, total: "90 ₳ADA" },
+  { key: 10, total: "100 ₳ADA" },
 ];
 
 export default function BuyModal({ open, onClose }) {
@@ -80,16 +48,15 @@ export default function BuyModal({ open, onClose }) {
           <Icon name={copied ? "check" : "copy"} />
         </Button>
         <p style={{ margin: 10 }}>
-          Please send<span className="pink"> 9 ₳ADA </span>to the address above
+          Please send<span className="pink"> 10 ₳ADA </span>to the address above
           to receive<span className="pink"> 1 </span>Space Babez, to receive
           more Babez please send the amount listed on the chart below.
         </p>
         <table className="price-table">
           <thead>
             <tr>
-              <th>Qty.</th>
-              <th>Price Per</th>
-              <th>Total Price</th>
+              <th>Quantity</th>
+              <th>Price</th>
             </tr>
             <tr>
               <td className="brdr" colSpan={3} />
@@ -103,16 +70,9 @@ export default function BuyModal({ open, onClose }) {
                 style={{ color: price.key === 10 ? "#b98dfc" : "" }}
               >
                 <td>{price.key}</td>
-                <td>{price.pp}</td>
                 <td>{price.total}</td>
               </tr>
             ))}
-            <tr>
-              <td colSpan={3} className="buyMore">
-                Buy<strong> 10 </strong> for the price of
-                <strong> 9</strong>!
-              </td>
-            </tr>
           </tbody>
         </table>
       </Modal.Content>
