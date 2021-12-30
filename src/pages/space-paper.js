@@ -320,25 +320,26 @@ def generateTattoo(x, num):
           <p className="paper-title">Red</p>
           <p>
             <span className="tab" />
-            <StaticImage src="../images/doc/red1.png" alt="Red" />
-            <StaticImage src="../images/doc/image034.png" alt="Red" />
-            <StaticImage src="../images/doc/image036.png" alt="Red" />
-            <StaticImage src="../images/doc/image038.png" alt="Red" />
-            <StaticImage src="../images/doc/image040.png" alt="Red" />
-            <StaticImage src="../images/doc/image042.png" alt="Red" />
-            <StaticImage src="../images/doc/image044.png" alt="Red" />
-            <StaticImage src="../images/doc/image046.png" alt="Red" />
+            <StaticImage src="../images/doc/red1.png" alt="img" />
+            <StaticImage src="../images/doc/image034.png" alt="img" />
+            <StaticImage src="../images/doc/image036.png" alt="img" />
+            <StaticImage src="../images/doc/image038.png" alt="img" />
+            <StaticImage src="../images/doc/image040.png" alt="img" />
+            <StaticImage src="../images/doc/image042.png" alt="img" />
+            <StaticImage src="../images/doc/image044.png" alt="img" />
+            <StaticImage src="../images/doc/image046.png" alt="img" />
           </p>
           <p className="paper-title">Multicolored</p>
           <p>
             <span className="tab" />
-            <StaticImage src="../images/doc/image047.png" alt="Red" />
-            <StaticImage src="../images/doc/image048.png" alt="Red" />
-            <StaticImage src="../images/doc/image049.png" alt="Red" />
-            <StaticImage src="../images/doc/image050.png" alt="Red" />
-            <StaticImage src="../images/doc/image051.png" alt="Red" />
-            <StaticImage src="../images/doc/image052.png" alt="Red" />
-            <StaticImage src="../images/doc/image053.png" alt="Red" />
+            <StaticImage src="../images/doc/multi1.png" alt="img" />
+            <StaticImage src="../images/doc/image047.png" alt="img" />
+            <StaticImage src="../images/doc/image048.png" alt="img" />
+            <StaticImage src="../images/doc/image049.png" alt="img" />
+            <StaticImage src="../images/doc/image050.png" alt="img" />
+            <StaticImage src="../images/doc/image051.png" alt="img" />
+            <StaticImage src="../images/doc/image052.png" alt="img" />
+            <StaticImage src="../images/doc/image053.png" alt="img" />
           </p>
           <p>
             <span className="tab" />
@@ -716,7 +717,11 @@ def generateBG(bgColor):
             <a href="https://anti.biz">Anti.biz</a>
           </p>
           <p>
-            <a download href="/ft/scripts.zip" className="downloader">
+            <a
+              download
+              href="/ft/spacebabez_scripts.zip"
+              className="downloader"
+            >
               <i
                 aria-hidden="true"
                 className="large code fitted icon purple"
