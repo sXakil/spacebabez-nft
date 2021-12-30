@@ -4,6 +4,7 @@ import { Container, Header } from "semantic-ui-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import obsidian from "react-syntax-highlighter/dist/cjs/styles/hljs/obsidian";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 
 export default function Paper() {
   useEffect(() => {
@@ -554,11 +555,11 @@ def generateBG(bgColor):
             big of a deal but when you got OCD about things being perfect it is
             a bit annoying.
           </p>
-          <p>
+          <p style={{ marginBottom: 0 }}>
             <span className="tab" />
             To better understand the powers here is the explanation:
           </p>
-          <p className="paper-title">Powers: 11</p>
+          <p className="paper-title">Powers</p>
           <ol type="i">
             <li>
               <strong>Style Power </strong>
@@ -748,7 +749,16 @@ def generateBG(bgColor):
           </p>
         </div>
       </Container>
-      <div style={{ height: 20 }}></div>
+      <Link to="/">
+        <div className="heart-img" style={{ marginTop: 20 }}>
+          <img
+            src="/ft/heart_link_96x96.png"
+            alt="heart"
+            style={{ marginRight: 15, height: 40, width: 40 }}
+          />{" "}
+          Home
+        </div>
+      </Link>
     </>
   );
 }
