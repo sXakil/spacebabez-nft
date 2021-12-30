@@ -1,12 +1,39 @@
 import React from "react";
-import { TransitionGroup } from "semantic-ui-react";
+import { TransitionGroup, Transition, Icon } from "semantic-ui-react";
 
 export default function ExternalLinks() {
   const [open, setOpen] = React.useState(false);
+  const [visible, setVisible] = React.useState(false);
+  function handleClick() {
+    setOpen(!open);
+    setVisible(!visible);
+  }
   return (
-    <div className="ext-links">
-      <button onClick={() => setOpen(!open)}>
+    <div className={`ext-links${visible ? " opened" : ""}`}>
+      <button onClick={handleClick}>
         <h1 className="section-header">External Links</h1>
+        <div className="trw">
+          <Transition
+            visible={visible}
+            animation="vertical flip"
+            duration={200}
+          >
+            <Icon
+              style={{ color: "#652bbc" }}
+              name="angle double up"
+              size="large"
+            />
+          </Transition>
+        </div>
+        <div className="trw">
+          <Transition
+            visible={!visible}
+            animation="vertical flip"
+            duration={200}
+          >
+            <Icon color="white" name="angle double down" size="large" />
+          </Transition>
+        </div>
       </button>
       <TransitionGroup animation="slide down" duration={500}>
         {open && (

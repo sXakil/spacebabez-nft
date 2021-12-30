@@ -94,7 +94,7 @@ export default function FAQ() {
             duration={200}
           >
             <Icon
-              style={{ color: "#652bbc" }}
+              style={{ color: "#8e4df0" }}
               name="angle double up"
               size="large"
             />

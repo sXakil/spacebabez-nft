@@ -72,17 +72,17 @@ const IndexPage = () => {
 
       <Container text style={{ marginTop: 20 }}>
         <About />
-        <Faq />
-        <Link to="/paper" className="paper-link">
+        <Link to="/space-paper" className="paper-link">
           <StaticImage
-            width={107}
-            height={100}
+            width={50}
+            height={50}
             src="../images/space_paper.png"
             alt="Paper"
             layout="fixed"
           />
           <h1 className="section-header">Space Paper</h1>
         </Link>
+        <Faq />
         <ExternalLinks />
       </Container>
       <Roadmap />
