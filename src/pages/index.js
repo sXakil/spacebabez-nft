@@ -74,8 +74,8 @@ const IndexPage = () => {
         <About />
         <Link to="/space-paper" className="paper-link">
           <StaticImage
-            width={50}
-            height={50}
+            width={48}
+            height={48}
             src="../images/space_paper.png"
             alt="Paper"
             layout="fixed"

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Button, Icon, Modal } from "semantic-ui-react";
 import Clipboard from "react-clipboard.js";
 
@@ -18,12 +18,13 @@ const prices = [
 export default function BuyModal({ open, onClose }) {
   const [copied, setCopied] = useState(false);
   const [percentage, setPercentage] = useState(56);
+  const counter = useRef(null);
   useEffect(() => {
-    const el = document.getElementById("_b_count");
-    if (!el) return;
-    const p = 6666 - el.innerText.split(" ")[0];
-    setPercentage(Math.ceil((p * 100) / 6666));
-  }, []);
+    if (counter.current) {
+      const p = 6666 - counter.current.innerText.split(" ")[0];
+      setPercentage(Math.ceil((p * 100) / 6666));
+    }
+  }, [open]);
   return (
     <Modal
       size="mini"
@@ -40,8 +41,8 @@ export default function BuyModal({ open, onClose }) {
           background: "#151515",
         }}
       >
-        <h1 id="_b_count" style={{ color: "#22ba1a", fontSize: 46 }}>
-          2999 Babez Left!
+        <h1 ref={counter} style={{ color: "#22ba1a", fontSize: 46 }}>
+          2566 Babez Left!
         </h1>
         <Button
           positive
@@ -86,7 +87,7 @@ export default function BuyModal({ open, onClose }) {
         </table>
         <br />
         <p>
-          This project has <span className="pink">554</span> wallet holders with
+          This project has <span className="pink">569</span> wallet holders with
           roughly <span className="pink">{percentage}%</span> of the total NFTs
           minted so far.
         </p>

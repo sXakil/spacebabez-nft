@@ -1,6 +1,14 @@
 {
   "git.ignoreLimitWarning": true,
-  "cSpell.words": ["babez", "Holygrail", "spacebabez"],
+  "cSpell.words": [
+    "babez",
+    "CNFT",
+    "hodlers",
+    "Holygrail",
+    "Osmo",
+    "spacebabez",
+    "splidejs"
+  ],
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,

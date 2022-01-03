@@ -40,7 +40,7 @@ const data = [
 ];
 
 const valData = [96, 92, 84, 75, 67, 58, 50, 41, 33, 16];
-const _init_slide = 5;
+const _init_slide = 6;
 
 let splide = null;
 
