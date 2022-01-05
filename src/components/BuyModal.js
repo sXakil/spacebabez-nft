@@ -42,7 +42,7 @@ export default function BuyModal({ open, onClose }) {
         }}
       >
         <h1 ref={counter} style={{ color: "#22ba1a", fontSize: 46 }}>
-          2566 Babez Left!
+          2066 Babez Left!
         </h1>
         <Button
           positive
@@ -87,7 +87,7 @@ export default function BuyModal({ open, onClose }) {
         </table>
         <br />
         <p>
-          This project has <span className="pink">569</span> wallet holders with
+          This project has <span className="pink">622</span> wallet holders with
           roughly <span className="pink">{percentage}%</span> of the total NFTs
           minted so far.
         </p>

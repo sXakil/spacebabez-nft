@@ -39,23 +39,23 @@ export default function ExternalLinks() {
         {open && (
           <ul>
             <li>
-              We are now listed on cnft.tools{" "}
+              We are now listed on{" "}
               <a
                 href="https://cnft.tools/spacebabez"
                 target="_blank"
                 rel="noreferrer"
               >
-                https://cnft.tools/spacebabez
+                CNFT.Tools
               </a>
             </li>
             <li>
-              Check out our secondary market sales here{" "}
+              Check out our secondary market sales on{" "}
               <a
                 href="https://opencnft.io/eEGjZJRB5LcoM32zDa8"
                 target="_blank"
                 rel="noreferrer"
               >
-                https://opencnft.io/eEGjZJRB5LcoM32zDa8
+                OpenCNFT
               </a>
             </li>
             <li>
@@ -68,6 +68,15 @@ export default function ExternalLinks() {
                     rel="noreferrer"
                   >
                     CNFT.io
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.jpg.store/collection/spacebabez"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    JPG.store
                   </a>
                 </li>
                 <li>
@@ -85,7 +94,7 @@ export default function ExternalLinks() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Genesishouse.io
+                    GenesisHouse.io
                   </a>
                 </li>
               </ul>
