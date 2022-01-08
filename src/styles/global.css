@@ -219,7 +219,7 @@ button.buyNow {
   margin-top: -20px;
   width: 304px;
   height: 79px;
-  background: url("../images/space_babez_buy_now.png");
+  background: url("../images/space_babez_sold_out_big.png");
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
@@ -1048,4 +1048,13 @@ a.downloader.green:hover {
   background-color: rgba(163, 51, 200, 0.1);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+}
+#con-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10000;
 }

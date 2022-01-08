@@ -24,6 +24,7 @@
     "@fontsource/vt323": "^4.5.0",
     "@loadable/component": "^5.15.2",
     "@splidejs/splide": "^3.0.6",
+    "confetti-js": "^0.0.18",
     "gatsby": "^3.13.0",
     "gatsby-plugin-image": "latest",
     "gatsby-plugin-react-helmet": "^4.14.0",

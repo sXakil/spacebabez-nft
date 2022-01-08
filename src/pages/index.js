@@ -11,6 +11,7 @@ import MetaTags from "../components/MetaTags";
 import Roadmap from "../components/Roadmap";
 import ExternalLinks from "../components/ExternalLinks";
 import { StaticImage } from "gatsby-plugin-image";
+import ConfettiGenerator from "confetti-js";
 import { Link } from "gatsby";
 
 const Explorer = loadable(() => import("../components/filters/Explorer"), {
@@ -33,11 +34,35 @@ const IndexPage = () => {
         "Web Dev: https://wa.me/+8801861590250 ",
       styles
     );
+    const confetti = new ConfettiGenerator({
+      target: "con-canvas",
+      max: "80",
+      size: "1",
+      animate: true,
+      props: [
+        "circle",
+        "square",
+        "triangle",
+        "line",
+        { type: "svg", src: "/ft/heart.svg", size: 35, weight: 0.8 },
+      ],
+      colors: [
+        [165, 104, 246],
+        [230, 61, 135],
+        [0, 199, 228],
+        [253, 214, 126],
+      ],
+      clock: "30",
+      rotate: true,
+      respawn: true,
+    });
+    confetti.render();
   }, []);
 
   return (
     <>
       <MetaTags />
+      <canvas id="con-canvas" />
       <Header onBuyButtonClicked={() => setOpenedBuyModal(true)} />
       <div className="socials">
         <a
