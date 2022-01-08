@@ -20,8 +20,9 @@ export default function BuyModal({ open, onClose }) {
       >
         <h1 style={{ color: "#22ba1a", fontSize: 46 }}>We are Sold Out!</h1>
         <p>
-          Be on the lookout for our <span className="pink">NEW</span> projects,
-          a lot more on the way!
+          Be on the lookout for our <span className="pink">NEW</span> projects
+          and new content coming to the world of Space Babez! We couldn't make
+          this happen without the support of our community!
         </p>
         <p style={{ marginBottom: 0 }}>Follow Us</p>
         <div className="socials" style={{ marginTop: 0 }}>

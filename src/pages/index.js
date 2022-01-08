@@ -36,7 +36,7 @@ const IndexPage = () => {
     );
     const confetti = new ConfettiGenerator({
       target: "con-canvas",
-      max: "80",
+      max: "60",
       size: "1",
       animate: true,
       props: [
@@ -52,7 +52,7 @@ const IndexPage = () => {
         [0, 199, 228],
         [253, 214, 126],
       ],
-      clock: "30",
+      clock: "25",
       rotate: true,
       respawn: true,
     });
