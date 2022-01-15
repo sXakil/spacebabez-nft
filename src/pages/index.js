@@ -13,6 +13,7 @@ import ExternalLinks from "../components/ExternalLinks";
 import { StaticImage } from "gatsby-plugin-image";
 import ConfettiGenerator from "confetti-js";
 import { Link } from "gatsby";
+import Banner from "../components/Banner";
 
 const Explorer = loadable(() => import("../components/filters/Explorer"), {
   fallback: (
@@ -63,6 +64,7 @@ const IndexPage = () => {
     <>
       <MetaTags />
       <canvas id="con-canvas" />
+      <Banner />
       <Header onBuyButtonClicked={() => setOpenedBuyModal(true)} />
       <div className="socials">
         <a
