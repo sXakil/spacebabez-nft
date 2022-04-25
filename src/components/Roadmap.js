@@ -11,7 +11,6 @@ const data = [
   ["Add Space Babez to Anti.biz lore", "Increase marketing & promotion"],
   [
     "3D Space Babez Toy #1 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
-    'Hire <a href="https://www.instagram.com/eliza.Osmo/" target="_blank" _blank" rel="noreferrer">@eliza.Osmo</a> to create 1 of a kind T-shirt design featuring Space Babez.',
     '<a href="https://cnft.tools/" target="_blank" _blank" rel="noreferrer">CNFT.tools</a> listing',
   ],
   [
@@ -33,10 +32,7 @@ const data = [
   [
     "3D Space Babez Toy #6 unique limited edition NFT on the same policy as the pixel Space Babez. Max Supply 100.",
   ],
-  [
-    "Space Babez Real life toy made. (Community will vote on which Space Babez to have made.)",
-    "Issue #3 Space Babez comicbook created.",
-  ],
+  ["Issue #3 Space Babez comicbook created."],
 ];
 
 const valData = [96, 92, 84, 75, 67, 58, 50, 41, 33, 16];
