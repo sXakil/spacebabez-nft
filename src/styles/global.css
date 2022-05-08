@@ -998,6 +998,12 @@ a#oz:hover {
   font-weight: bold;
   font-size: 20px;
 }
+.shopImage .gatsby-image-wrapper {
+  transition: all 0.4s ease;
+}
+.shopImage:hover .gatsby-image-wrapper {
+  transform: rotate(-9deg);
+}
 .paper-content .gatsby-image-wrapper {
   margin-bottom: 15px;
 }
