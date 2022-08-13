@@ -17,9 +17,8 @@ export default function About() {
         <span className="blue"> #boobz</span>
       </p>
       <Embed
-        id="BloWNkomtTc"
         placeholder="https://img.youtube.com/vi/BloWNkomtTc/maxresdefault.jpg"
-        source="youtube"
+        url="https://www.youtube.com/embed/videoseries?list=PLlfetFJqRVHF_yMQhH5k_x8n27tsupYDU"
       />
       <a
         href="https://cardanoscan.io/tokenPolicy/3691ce00d8a2bd035a85d77e5428e34da58de9acbeedeee8256b8175"
