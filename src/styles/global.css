@@ -127,6 +127,9 @@ p.details {
   font-size: 26px;
   line-height: 1;
 }
+p.details.mb0 {
+  margin-bottom: 0;
+}
 p.details.highlight {
   font-style: italic;
   background: #252525;
@@ -1109,5 +1112,102 @@ a.downloader.green:hover {
   .banner p {
     font-size: 20px;
     margin-right: 50px;
+  }
+}
+model-viewer {
+  width: 100%;
+  height: 90%;
+  background-color: #ffffff;
+}
+
+.progress-bar {
+  display: block;
+  width: 33%;
+  height: 10%;
+  max-height: 2%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 25px;
+  box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5),
+    0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar.hide {
+  visibility: hidden;
+  transition: visibility 0.3s;
+}
+
+.update-bar {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 0%;
+  height: 100%;
+  border-radius: 25px;
+  float: left;
+  transition: width 0.3s;
+}
+
+button.rb {
+  margin: 8px auto;
+  position: relative;
+  background-color: #fff;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+button.rb:hover {
+  background-color: #050505;
+}
+button.rb:active {
+  background-color: #151515;
+}
+button.rb p {
+  margin: 1px;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #000;
+  z-index: 1;
+}
+button.rb .aft {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom right,
+    #ff10f0 0%,
+    #5b1abb 20%,
+    #21ba45 40%,
+    #ff10f0 60%,
+    #5b1abb 80%,
+    #21ba45 100%
+  );
+  background-size: 400% 400%;
+  border-radius: 0.28571429rem;
+  animation: grad 2s ease infinite;
+}
+@keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
