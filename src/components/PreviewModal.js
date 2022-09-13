@@ -7,7 +7,7 @@ export default function PreviewModal({ openedImage, onImageModalClose }) {
   if (openedImage === null) return null;
   const label = `Space Babez #${openedImage?.id}`;
   const image =
-    "https://spacebabez.io/images/space_babez_" +
+    "https://space-babez.com/images/space_babez_" +
     (openedImage?.id).toString().padStart(4, "0") +
     ".gif";
   return (

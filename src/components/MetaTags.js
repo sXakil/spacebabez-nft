@@ -16,12 +16,12 @@ export default function MetaTags() {
       <meta name="description" content={content} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://spacebabez.io/" />
+      <meta property="og:url" content="https://space-babez.com/" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={content} />
       <meta property="og:image" content="/ft/banner.png" />
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://spacebabez.io/" />
+      <meta property="twitter:url" content="https://space-babez.com/" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={content} />
       <meta property="twitter:image" content="/ft/banner.png" />

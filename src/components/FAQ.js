@@ -15,7 +15,7 @@ const data = [
   {
     title: "What is metadata?",
     description:
-      'The metadata for each Space Babez is on-chain. What that means is that the Cardano blockchain stores the information of each NFT forever. Each NFT will store the description, image link, <a class="u" href="https://cardanoscan.io/tokenPolicy/3691ce00d8a2bd035a85d77e5428e34da58de9acbeedeee8256b8175" target="_blank" rel="noreferrer">policy</a>, links and unique traits of each Space Babez. When you purchase a Space Babez from our website (<a class="u" href="https://spacebabez.io">spacebabez.io</a>) the Space Babez NFT will be automatically sent to your wallet!',
+      'The metadata for each Space Babez is on-chain. What that means is that the Cardano blockchain stores the information of each NFT forever. Each NFT will store the description, image link, <a class="u" href="https://cardanoscan.io/tokenPolicy/3691ce00d8a2bd035a85d77e5428e34da58de9acbeedeee8256b8175" target="_blank" rel="noreferrer">policy</a>, links and unique traits of each Space Babez. When you purchase a Space Babez from our website (<a class="u" href="https://space-babez.com">space-babez.com</a>) the Space Babez NFT will be automatically sent to your wallet!',
   },
   {
     title: "What is a policy number?",

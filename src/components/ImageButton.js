@@ -4,7 +4,7 @@ import { Image } from "semantic-ui-react";
 
 export default function ImageButton({ onClick, value }) {
   const image =
-    "https://spacebabez.io/images/space_babez_" +
+    "https://space-babez.com/images/space_babez_" +
     value.toString().padStart(4, "0") +
     ".gif";
   const token = "Space Babez #" + value;

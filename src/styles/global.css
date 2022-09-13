@@ -1178,6 +1178,8 @@ button.rb p {
   border-radius: 5px;
   padding: 15px;
   background-color: #000;
+  word-break: break-all;
+  word-wrap: break-word;
   z-index: 1;
 }
 button.rb .aft {
