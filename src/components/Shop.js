@@ -3,7 +3,16 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Icon } from "semantic-ui-react";
 
 export default function Shop() {
+  const [isMobile, setIsMobile] = React.useState(true);
   const [copied, setCopied] = React.useState(false);
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth < 768);
+      window.onresize = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+    }
+  }, []);
   function copy() {
     if (!navigator.clipboard) {
       const textArea = document.createElement("textarea");
@@ -32,12 +41,21 @@ export default function Shop() {
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
       <h1 className="section-header">Shop</h1>
-      <iframe
-        title="3D Space Babez"
-        src="/ft/model/index.html"
-        style={{ border: 0, width: "100%", minHeight: 700 }}
-        loading="lazy"
-      ></iframe>
+      {isMobile ? (
+        <StaticImage
+          src="../images/poster.png"
+          alt="space babez"
+          width={480}
+          fullWidth
+        />
+      ) : (
+        <iframe
+          title="3D Space Babez"
+          src="/ft/model/index.html"
+          style={{ border: 0, width: "100%", minHeight: 700 }}
+          loading="lazy"
+        ></iframe>
+      )}
       <div
         style={{
           backgroundColor: "#111111",
