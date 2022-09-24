@@ -17,7 +17,7 @@
     "serve": "gatsby serve",
     "build": "gatsby build",
     "clean": "mv ./public/ft ./ && gatsby clean && mkdir ./public && mv ./ft ./public/",
-    "cb": "move .\\public\\ft .\\ &&  gatsby clean && gatsby build && move .\\ft .\\public\\"
+    "cb": "mv public/ft ./ && gatsby clean && gatsby build && mv ft public/"
   },
   "dependencies": {
     "@fontsource/noto-serif": "^4.5.1",
