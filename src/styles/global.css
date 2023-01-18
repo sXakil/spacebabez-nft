@@ -672,6 +672,7 @@ td.buyMore strong {
 }
 input[type="range"] {
   -webkit-appearance: none;
+  appearance: none;
   margin: 0;
   width: 600px;
   opacity: 0;
