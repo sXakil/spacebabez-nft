@@ -15,7 +15,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "clean": "mv ./public/ft ./ && gatsby clean && mkdir ./public && mv ./ft ./public/",
     "cb": "mv public/ft ./ && gatsby clean && gatsby build && mv ft public/"
   },

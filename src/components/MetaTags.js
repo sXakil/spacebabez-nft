@@ -11,7 +11,11 @@ export default function MetaTags() {
     <Helmet>
       <html lang="en" />
       <title>{title}</title>
-      <link rel="icon" type="image/png" href="/ft/favicon-32x32.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        href="https://space-babez.com/ft/favicon-32x32.png"
+      />
       <meta name="title" content={title} />
       <meta name="description" content={content} />
 
@@ -19,12 +23,18 @@ export default function MetaTags() {
       <meta property="og:url" content="https://space-babez.com/" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={content} />
-      <meta property="og:image" content="/ft/banner.png" />
+      <meta
+        property="og:image"
+        content="https://space-babez.com/ft/banner.png"
+      />
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://space-babez.com/" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={content} />
-      <meta property="twitter:image" content="/ft/banner.png" />
+      <meta
+        property="twitter:image"
+        content="https://space-babez.com/ft/banner.png"
+      />
     </Helmet>
   );
 }

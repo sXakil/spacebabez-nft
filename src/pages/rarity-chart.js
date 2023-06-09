@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { Header, Table } from "semantic-ui-react";
 import { Helmet } from "react-helmet";
-import chart from "../data/rarity.json";
 import { Link } from "gatsby";
+
+import chart from "../data/rarity.json";
 
 export default function RarityChart() {
   useEffect(() => {
@@ -19,7 +20,11 @@ export default function RarityChart() {
     <>
       <Helmet>
         <title>Spacebabez - Rarity Chart</title>
-        <link rel="icon" type="image/png" href="/ft/favicon-32x32.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://space-babez.com/ft/favicon-32x32.png"
+        />
       </Helmet>
       <Header
         textAlign="center"
@@ -93,7 +98,7 @@ export default function RarityChart() {
       <Link to="/">
         <div className="heart-img">
           <img
-            src="/ft/heart_link_96x96.png"
+            src="https://space-babez.com/ft/heart_link_96x96.png"
             alt="heart"
             style={{ marginRight: 15, height: 40, width: 40 }}
           />{" "}

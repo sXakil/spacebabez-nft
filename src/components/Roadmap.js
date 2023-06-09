@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+
+import Splide from "@splidejs/splide";
+import React, { useEffect, useState } from "react";
 
 const data = [
   [
@@ -113,7 +114,7 @@ export default function Roadmap() {
       <div className="roadmap-container">
         <div className="thermometer-container">
           <img
-            src={`/ft/thermometer_${img}.png`}
+            src={`https://space-babez.com/ft/thermometer_${img}.png`}
             alt="thermometer"
             className="thermometer"
           />

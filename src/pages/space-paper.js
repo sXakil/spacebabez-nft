@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import { Container, Header } from "semantic-ui-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import obsidian from "react-syntax-highlighter/dist/cjs/styles/hljs/obsidian";
+import React, { useEffect } from "react";
+import { Container, Header } from "semantic-ui-react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Paper() {
   useEffect(() => {
@@ -21,7 +21,11 @@ export default function Paper() {
     <>
       <Helmet>
         <title>Space Paper</title>
-        <link rel="icon" type="image/png" href="/ft/favicon-32x32.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://space-babez.com/ft/favicon-32x32.png"
+        />
       </Helmet>
       <Container text textAlign="left" className="paper">
         <Header color="white" as="h1">
@@ -719,7 +723,7 @@ def generateBG(bgColor):
           <p>
             <a
               download
-              href="/ft/spacebabez_scripts.zip"
+              href="https://space-babez.com/ft/spacebabez_scripts.zip"
               className="downloader"
             >
               <i
@@ -735,7 +739,7 @@ def generateBG(bgColor):
           <p>
             <a
               download
-              href="/ft/SpaceBabez.torrent"
+              href="https://space-babez.com/ft/SpaceBabez.torrent"
               className="downloader green"
             >
               <i
@@ -757,7 +761,7 @@ def generateBG(bgColor):
       <Link to="/">
         <div className="heart-img" style={{ marginTop: 20 }}>
           <img
-            src="/ft/heart_link_96x96.png"
+            src="https://space-babez.com/ft/heart_link_96x96.png"
             alt="heart"
             style={{ marginRight: 15, height: 40, width: 40 }}
           />{" "}
