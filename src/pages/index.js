@@ -1,20 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { Container, Icon, Loader } from "semantic-ui-react";
 import loadable from "@loadable/component";
-import Header from "../components/Header";
-import Faq from "../components/FAQ";
-import Traits from "../components/Traits";
-import About from "../components/About";
-import Shop from "../components/Shop";
-import BuyModal from "../components/BuyModal";
-import MetaTags from "../components/MetaTags";
-import Roadmap from "../components/Roadmap";
-import ExternalLinks from "../components/ExternalLinks";
-import { StaticImage } from "gatsby-plugin-image";
+import React, { useEffect, useState } from "react";
+import { Container, Icon, Loader } from "semantic-ui-react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+
+import About from "../components/About";
 import Banner from "../components/Banner";
+import BuyModal from "../components/BuyModal";
+// import Roadmap from "../components/Roadmap";
+import ExternalLinks from "../components/ExternalLinks";
+import Faq from "../components/FAQ";
+import Header from "../components/Header";
+import MetaTags from "../components/MetaTags";
+import Traits from "../components/Traits";
 
 const Explorer = loadable(() => import("../components/filters/Explorer"), {
+  fallback: (
+    <Loader active size="huge" inline="centered">
+      LOADING
+    </Loader>
+  ),
+});
+
+const Shop = loadable(() => import("../components/Shop"), {
   fallback: (
     <Loader active size="huge" inline="centered">
       LOADING
@@ -88,7 +96,7 @@ const IndexPage = () => {
         <Faq />
         <ExternalLinks />
       </Container>
-      <Roadmap />
+      {/* <Roadmap /> */}
       <Container text style={{ paddingTop: 20, paddingBottom: 20 }}>
         <Shop />
         <Traits />
