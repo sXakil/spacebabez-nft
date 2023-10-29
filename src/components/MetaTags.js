@@ -14,26 +14,26 @@ export default function MetaTags() {
       <link
         rel="icon"
         type="image/png"
-        href="https://space-babez.com/ft/favicon-32x32.png"
+        href="https://anti.biz/spacebabez/ft/favicon-32x32.png"
       />
       <meta name="title" content={title} />
       <meta name="description" content={content} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://space-babez.com/" />
+      <meta property="og:url" content="https://anti.biz/spacebabez/" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={content} />
       <meta
         property="og:image"
-        content="https://space-babez.com/ft/banner.png"
+        content="https://anti.biz/spacebabez/ft/banner.png"
       />
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://space-babez.com/" />
+      <meta property="twitter:url" content="https://anti.biz/spacebabez/" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={content} />
       <meta
         property="twitter:image"
-        content="https://space-babez.com/ft/banner.png"
+        content="https://anti.biz/spacebabez/ft/banner.png"
       />
     </Helmet>
   );

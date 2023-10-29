@@ -114,7 +114,7 @@ export default function Roadmap() {
       <div className="roadmap-container">
         <div className="thermometer-container">
           <img
-            src={`https://space-babez.com/ft/thermometer_${img}.png`}
+            src={`https://anti.biz/spacebabez/ft/thermometer_${img}.png`}
             alt="thermometer"
             className="thermometer"
           />

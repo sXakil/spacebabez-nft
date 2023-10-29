@@ -23,7 +23,7 @@ export default function RarityChart() {
         <link
           rel="icon"
           type="image/png"
-          href="https://space-babez.com/ft/favicon-32x32.png"
+          href="https://anti.biz/spacebabez/ft/favicon-32x32.png"
         />
       </Helmet>
       <Header
@@ -98,7 +98,7 @@ export default function RarityChart() {
       <Link to="/">
         <div className="heart-img">
           <img
-            src="https://space-babez.com/ft/heart_link_96x96.png"
+            src="https://anti.biz/spacebabez/ft/heart_link_96x96.png"
             alt="heart"
             style={{ marginRight: 15, height: 40, width: 40 }}
           />{" "}

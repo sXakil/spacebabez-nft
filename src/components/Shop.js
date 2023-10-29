@@ -27,7 +27,7 @@ export default function Shop() {
       ) : (
         <iframe
           title="3D Space Babez"
-          src="https://space-babez.com/ft/model/index.html"
+          src="https://anti.biz/spacebabez/ft/model/index.html"
           style={{ border: 0, width: "100%", minHeight: 700 }}
           loading="lazy"
         ></iframe>

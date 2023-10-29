@@ -24,7 +24,7 @@ export default function Paper() {
         <link
           rel="icon"
           type="image/png"
-          href="https://space-babez.com/ft/favicon-32x32.png"
+          href="https://anti.biz/spacebabez/ft/favicon-32x32.png"
         />
       </Helmet>
       <Container text textAlign="left" className="paper">
@@ -723,7 +723,7 @@ def generateBG(bgColor):
           <p>
             <a
               download
-              href="https://space-babez.com/ft/spacebabez_scripts.zip"
+              href="https://anti.biz/spacebabez/ft/spacebabez_scripts.zip"
               className="downloader"
             >
               <i
@@ -739,7 +739,7 @@ def generateBG(bgColor):
           <p>
             <a
               download
-              href="https://space-babez.com/ft/SpaceBabez.torrent"
+              href="https://anti.biz/spacebabez/ft/SpaceBabez.torrent"
               className="downloader green"
             >
               <i
@@ -761,7 +761,7 @@ def generateBG(bgColor):
       <Link to="/">
         <div className="heart-img" style={{ marginTop: 20 }}>
           <img
-            src="https://space-babez.com/ft/heart_link_96x96.png"
+            src="https://anti.biz/spacebabez/ft/heart_link_96x96.png"
             alt="heart"
             style={{ marginRight: 15, height: 40, width: 40 }}
           />{" "}
